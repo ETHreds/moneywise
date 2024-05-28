@@ -6,13 +6,6 @@ const { engine } = require('express-handlebars');
 
 const app = express();
 
-const fortunes = [
-  "Conquer your fears or they will conquer you.",
-  "Rivers need springs.",
-  "Do not fear what you don't know.",
-  "You will have a pleasant surprise.",
-  "Whenever possible, keep it simple.",
-]
 
 app.use(morgan('combined'));
 app.use(bodyParser.json());
@@ -27,15 +20,11 @@ app.set('views', './views');
 app.use(express.static(__dirname + '/public'))
 
 
-app.get('/', (req, res) => {
-  res.render('home');
-});
+const homeRouter = require('./routers/home');
+app.get('/', homeRouter);
 
-app.get('/about', (req, res) => {
-  const randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)]
-  res.render('about', { fortune: randomFortune })
-  // res.render('about');
-});
+const aboutRouter = require('./routers/about');
+app.use('/', aboutRouter);
 
 app.use((req, res) => {
   res.status(404)
