@@ -3,6 +3,7 @@ const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const { engine } = require('express-handlebars');
+const sequelize = require('./utils/postgres.db')
 
 const app = express();
 
@@ -26,6 +27,9 @@ app.get('/', homeRouter);
 const aboutRouter = require('./routers/about');
 app.use('/', aboutRouter);
 
+//Users
+app.use('/users', require('./routers/user.router'));
+
 app.use((req, res) => {
   res.status(404)
   res.render('404')
@@ -37,5 +41,14 @@ app.use((err, req, res, next) => {
   res.status(500)
   res.render('500')
 })
+
+
+// sync sequelize
+
+sequelize.sync()
+  .then(result => {
+    console.log("Database connected");
+  })
+  .catch(err => console.log(err));
 
 module.exports = app;

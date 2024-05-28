@@ -1,6 +1,22 @@
 version: "3.9"
 
 services:
+  backend:
+    container_name: backend
+    image: backend
+    build:
+      context: ./api
+      dockerfile: backend.dockerfile
+    ports:
+      - 3000:3000
+    environment:
+      - PG_DB=postgres
+      - PG_USER=postgres
+      - PG_PASSWORD=postgres
+      - PG_HOST=db
+    restart: always
+    depends_on:
+      - db
   db:
     container_name: db
     image: postgres:12
