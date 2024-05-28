@@ -28,7 +28,12 @@ const aboutRouter = require('./routers/about');
 app.use('/', aboutRouter);
 
 //Users
+
 app.use('/users', require('./routers/user.router'));
+
+// Auth
+
+app.use('/auth', require('./routers/auth.router'));
 
 app.use((req, res) => {
   res.status(404)

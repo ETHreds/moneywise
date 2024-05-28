@@ -1,5 +1,5 @@
 const User = require('../models/users.model');
-
+const bcrypt = require('bcrypt');
 
 //get all users
 function getUsers(req, res, next) {
@@ -24,24 +24,42 @@ function getUser(req, res, next) {
 }
 
 //create user
+
 function createUser(req, res, next) {
-    const name = req.body.name;
-    const email = req.body.email;
-    User.create({
-        name: name,
-        email: email
-    })
-        .then(result => {
-            console.log('Created User');
-            res.status(201).json({
-                message: 'User created successfully!',
-                user: result
-            });
+
+    const { name, email, password } = req.body;
+
+    // Hash the password
+    bcrypt.hash(password, 10, (err, hashedPassword) => {
+        if (err) {
+            console.error('Error hashing password:', err);
+            return res.status(500).json({ message: 'Internal Server Error' });
+        }
+
+        User.findOrCreate({
+            where: { email: email },
+            defaults: { name: name, password: hashedPassword }
         })
-        .catch(err => {
-            console.log(err);
-        });
+            .then(([user, created]) => {
+                if (created) {
+                    res.status(201).json({
+                        message: 'User created successfully!',
+                        user: user
+                    });
+                } else {
+                    return res.json({
+                        message: 'Email already exists!'
+                    });
+                }
+            })
+            .catch(err => {
+                console.error('Error creating user:', err);
+                return res.status(500).json({ message: 'Internal Server Error' });
+            });
+    });
 }
+
+
 
 //update user
 function updateUser(req, res, next) {
