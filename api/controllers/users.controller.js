@@ -25,8 +25,8 @@ function getUser(req, res, next) {
 
 //create user
 
-function createUser(req, res, next) {
 
+function createUser(req, res, next) {
     const { name, email, password } = req.body;
 
     // Hash the password
@@ -42,6 +42,7 @@ function createUser(req, res, next) {
         })
             .then(([user, created]) => {
                 if (created) {
+                    console.log('Created User');
                     res.status(201).json({
                         message: 'User created successfully!',
                         user: user
