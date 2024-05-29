@@ -7,7 +7,7 @@ const {
 } = require('../controllers/auth.controller.js')
 
 
-authRouter.get('/auth', signOut); // /logout
-authRouter.post('/auth', signIn); // /logIn
+authRouter.get('/', signOut); // /logout
+authRouter.post('/', signIn); // /logIn
 
 module.exports = authRouter;
