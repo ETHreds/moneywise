@@ -1,4 +1,4 @@
-# moneywise (client)
+# Moneywise (client)
 
 Personal finance app
 
@@ -20,6 +20,14 @@ quasar dev
 yarn lint
 # or
 npm run lint
+```
+
+
+### Format the files
+```bash
+yarn format
+# or
+npm run format
 ```
 
 
