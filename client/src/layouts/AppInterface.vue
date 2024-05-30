@@ -1,7 +1,6 @@
 <template>
-  <q-layout view="hHh lpR fFf">
-
-    <q-header bordered class="bg-secondary text-white ">
+  <q-layout view="hHh Lpr lff" container style="height: 100dvh" class="shadow-2 rounded-borders">
+    <q-header bordered class="bg-secondary text-white">
       <q-toolbar>
         <q-avatar size="40px" class="absolute-center">
           <img src="https://cdn.quasar.dev/logo-v2/svg/logo.svg">
@@ -10,12 +9,11 @@
       </q-toolbar>
     </q-header>
 
-
     <q-drawer v-model="drawer" show-if-above :mini="!drawer || miniState" @click.capture="drawerClick" :width="200"
       gt="md" bordered :class="$q.dark.isActive ? 'bg-grey-9' : 'bg-grey-3'">
       <q-scroll-area class="fit" :horizontal-thumb-style="{ opacity: 0 }">
         <q-list padding>
-          <q-item to="/home" clickable v-ripple>
+          <q-item to="/user" clickable v-ripple>
             <q-item-section avatar>
               <q-icon name="home" />
             </q-item-section>
@@ -23,7 +21,15 @@
             <q-item-section>
               Home
             </q-item-section>
-            <!-- <q-route-tab icon="home" to="/home" replace label="Home" /> -->
+          </q-item>
+          <q-item to="user/accounts" clickable v-ripple>
+            <q-item-section avatar>
+              <q-icon name="badge" />
+            </q-item-section>
+
+            <q-item-section>
+              Accounts
+            </q-item-section>
           </q-item>
           <q-item to="/transactions" clickable v-ripple>
             <q-item-section avatar>
@@ -54,6 +60,7 @@
 
       <q-tabs switch-indicator>
         <q-route-tab icon="home" to="/home" replace label="Home" />
+        <q-route-tab icon="badge" to="user/accounts" replace label="Accounts" />
         <q-route-tab icon="assignment" to="/transactions" replace label="Transactions" />
       </q-tabs>
     </q-footer>

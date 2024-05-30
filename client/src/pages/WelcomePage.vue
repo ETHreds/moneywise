@@ -41,7 +41,7 @@
           <div class="q-mb-2xlg">
             <p>Take control of your finances and achieve your goals.</p>
           </div>
-          <q-btn color="primary" to="/home" label="Get Started" />
+          <q-btn color="primary" to="/user" label="Get Started" />
         </div>
       </q-carousel-slide>
     </q-carousel>
