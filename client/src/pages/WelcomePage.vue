@@ -17,7 +17,6 @@
             <p>Log your expenses and income with ease.</p>
             <p>Categorize transactions for better insights.</p>
             <p>Monitor spending habits over time.</p>
-
           </div>
         </div>
       </q-carousel-slide>
@@ -26,11 +25,9 @@
         <div class="q-mt-md text-center">
           <div class="text-h4 q-mb-md">Set Budgets and Savings Goals</div>
           <div class="q-mb-lg">
-
             <p>Allocate funds to different expense categories.</p>
             <p>Define savings goals and track your progress.</p>
             <p>Receive alerts when nearing budget limits.</p>
-
           </div>
         </div>
       </q-carousel-slide>
@@ -41,19 +38,33 @@
           <div class="q-mb-2xlg">
             <p>Take control of your finances and achieve your goals.</p>
           </div>
-          <q-btn color="primary" to="/user" label="Get Started" />
+          <q-btn color="primary" @click="toggleAuthModal" label="Get Started" />
+          <!-- Render AuthComponent only if modal is open -->
         </div>
       </q-carousel-slide>
     </q-carousel>
-
+    <q-dialog v-model="showDialog" backdrop-filter="blur(4px) saturate(150%)">
+      <auth-component />
+    </q-dialog>
   </div>
 </template>
 
 <script setup>
 import { ref } from "vue";
+import { mapStores } from "pinia";
+import useModalStore from '../stores/modal.store'
+import AuthComponent from '../components/AuthComponent.vue'
+
 
 const slide = ref('style');
+const showDialog = ref(false)
+const { modalStore } = mapStores(useModalStore);
 
+function toggleAuthModal() {
+  modalStore.isOpen = !modalStore.isOpen;
+  showDialog.value = true
+}
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+// Your component styles here</style>
