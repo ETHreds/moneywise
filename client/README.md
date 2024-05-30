@@ -1,6 +1,6 @@
-# Moneywise (client)
+# Moneywise (moneywise)
 
-Personal finance app
+Personal Finance tracker
 
 ## Install the dependencies
 ```bash

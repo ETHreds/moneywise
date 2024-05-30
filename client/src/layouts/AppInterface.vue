@@ -1,49 +1,62 @@
 <template>
-  <q-layout view="hHh Lpr fFf"> <!-- Be sure to play with the Layout demo on docs -->
+  <q-layout view="hHh lpR fFf">
 
-    <!-- (Optional) The Header -->
-    <q-header elevated>
+    <q-header bordered class="bg-secondary text-white ">
       <q-toolbar>
-        <q-btn flat round dense icon="menu" @click="toggleLeftDrawer" />
+        <q-avatar size="40px" class="absolute-center">
+          <img src="https://cdn.quasar.dev/logo-v2/svg/logo.svg">
+        </q-avatar>
 
-        <q-toolbar-title>
-          Header
-        </q-toolbar-title>
       </q-toolbar>
-
-      <q-tabs>
-        <q-route-tab icon="map" to="/your/route" replace label="One Tab" />
-        <q-route-tab icon="assignment" to="/some/other/route" replace label="Other Tab" />
-      </q-tabs>
     </q-header>
 
-    <!-- (Optional) The Footer -->
-    <q-footer>
-      <q-tabs switch-indicator>
-        <q-route-tab icon="map" to="/your/route" replace label="One Tab" />
-        <q-route-tab icon="assignment" to="/some/other/route" replace label="Other Tab" />
-      </q-tabs>
 
-      <q-toolbar>
-        <q-btn flat round dense icon="menu" @click="toggleLeftDrawer" />
-        <q-toolbar-title>
-          Footer
-        </q-toolbar-title>
-      </q-toolbar>
-    </q-footer>
+    <q-drawer v-model="drawer" show-if-above :mini="!drawer || miniState" @click.capture="drawerClick" :width="200"
+      gt="md" bordered :class="$q.dark.isActive ? 'bg-grey-9' : 'bg-grey-3'">
+      <q-scroll-area class="fit" :horizontal-thumb-style="{ opacity: 0 }">
+        <q-list padding>
+          <q-item to="/home" clickable v-ripple>
+            <q-item-section avatar>
+              <q-icon name="home" />
+            </q-item-section>
 
-    <!-- (Optional) A Drawer; you can add one more with side="right" or change this one's side -->
-    <q-drawer v-model="leftDrawerOpen" side="left" bordered class="bg-grey-2">
-      <!-- QScrollArea is optional -->
-      <q-scroll-area class="fit q-pa-sm">
-        <!-- Content here -->
+            <q-item-section>
+              Home
+            </q-item-section>
+            <!-- <q-route-tab icon="home" to="/home" replace label="Home" /> -->
+          </q-item>
+          <q-item to="/transactions" clickable v-ripple>
+            <q-item-section avatar>
+              <q-icon name="assignment" />
+            </q-item-section>
+
+            <q-item-section>
+              Transactions
+            </q-item-section>
+          </q-item>
+        </q-list>
       </q-scroll-area>
-    </q-drawer>
 
+      <!--
+          in this case, we use a button (can be anything)
+          so that user can switch back
+          to mini-mode
+        -->
+      <div class="q-mini-drawer-hide absolute" style="top: 15px; right: -17px">
+        <q-btn dense round unelevated color="accent" icon="chevron_left" @click="miniState = true" />
+      </div>
+    </q-drawer>
     <q-page-container>
-      <!-- This is where pages get injected -->
       <router-view />
     </q-page-container>
+
+    <q-footer elevated class="bg-secondary text-white lt-md">
+
+      <q-tabs switch-indicator>
+        <q-route-tab icon="home" to="/home" replace label="Home" />
+        <q-route-tab icon="assignment" to="/transactions" replace label="Transactions" />
+      </q-tabs>
+    </q-footer>
 
   </q-layout>
 </template>
@@ -52,15 +65,24 @@
 import { ref } from 'vue'
 
 export default {
-  // name: 'LayoutName',
-
   setup() {
-    const leftDrawerOpen = ref(false)
+    const miniState = ref(false)
 
     return {
-      leftDrawerOpen,
-      toggleLeftDrawer() {
-        leftDrawerOpen.value = !leftDrawerOpen.value
+      drawer: ref(false),
+      miniState,
+
+      drawerClick(e) {
+        // if in "mini" state and user
+        // click on drawer, we switch it to "normal" mode
+        if (miniState.value) {
+          miniState.value = false
+
+          // notice we have registered an event with capture flag;
+          // we need to stop further propagation as this click is
+          // intended for switching drawer to "normal" mode only
+          e.stopPropagation()
+        }
       }
     }
   }
