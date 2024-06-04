@@ -1,4 +1,5 @@
 const Sequelize = require('sequelize');
+require('dotenv').config();
 
 const sequelize = new Sequelize(
     process.env.PG_DB,
@@ -9,5 +10,6 @@ const sequelize = new Sequelize(
         dialect: 'postgres',
     }
 );
+
 
 module.exports = sequelize;

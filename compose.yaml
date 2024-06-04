@@ -1,4 +1,16 @@
 services:
+  frontend:
+    container_name: client
+    build:
+      context: ./client
+      dockerfile: client.dockerfile
+    ports:
+      - 9000:9000
+    environment:
+      - VUE_APP_API_URL=http://localhost:3000/
+    depends_on:
+      - backend
+    restart: always
   backend:
     container_name: backend
     image: backend

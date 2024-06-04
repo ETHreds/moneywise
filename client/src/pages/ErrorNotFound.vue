@@ -15,7 +15,14 @@
 </template>
 
 <script setup>
+import { onMounted } from 'vue';
 defineOptions({
   name: 'ErrorNotFound'
+});
+const message = ref('');
+
+onMounted(async () => {
+  const response = await api.get('/');
+  message.value = response.data.message;
 });
 </script>

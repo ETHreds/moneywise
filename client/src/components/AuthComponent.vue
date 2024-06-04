@@ -6,27 +6,48 @@
           <q-tab label="Login" name="login" />
           <q-tab label="Registration" name="registration" />
         </q-tabs>
+        <div class="div">
+          {{ responseMessage }}
+        </div>
       </q-card-section>
 
       <q-separator />
 
+
       <q-tab-panels v-model="tab" animated>
         <q-tab-panel name="login">
-          <form @submit.prevent="login">
-            <q-input v-model="loginForm.email" label="Email" />
-            <q-input v-model="loginForm.password" label="Password" type="password" />
-            <q-btn type="submit" label="Login" color="primary" />
-          </form>
         </q-tab-panel>
 
         <q-tab-panel name="registration">
-          <form @submit.prevent="register">
-            <q-input v-model="registerForm.name" label="Name" />
-            <q-input v-model="registerForm.email" label="Email" />
-            <q-input v-model="registerForm.password" label="Password" type="password" />
-            <q-input v-model="registerForm.confirmPassword" label="Confirm Password" type="password" />
-            <q-btn type="submit" label="Register" color="primary" />
-          </form>
+          <vee-form @submit="register" :validation-schema="schema">
+            <div class="input-field">
+              <q-label class="mb-2">Name</q-label>
+              <vee-field type="text" name="name" placeholder="Enter Name" class="" v-model="userReg.name" />
+              <ErrorMessage name="name" class="text-negative " />
+            </div>
+            <div class="input-field">
+              <q-label class="mb-2">Email</q-label>
+              <vee-field type="text" name="email" placeholder="Enter Email" class="" v-model="userReg.email" />
+              <ErrorMessage name="email" class="text-negative " />
+            </div>
+            <div class="input-field">
+              <q-label class="mb-2">Password</q-label>
+              <vee-field type="text" name="password" placeholder="Enter Password" class="" v-model="userReg.password" />
+              <ErrorMessage name="password" class="text-negative " />
+            </div>
+            <div class="input-field">
+              <q-label class="mb-2">Confirm Password</q-label>
+              <vee-field type="text" name="confirm_password" placeholder="  Re-enter Password" class="" />
+              <ErrorMessage name="confirm_password" class="text-negative " />
+            </div>
+            <div class="mb-3 pl-6">
+              <vee-field name="tos" value="1" type="checkbox" class="" />
+              <label class="inline-block">Accept terms of service</label>
+              <ErrorMessage class="text-negative" name="tos" />
+            </div>
+
+            <q-btn label="Submit" type="submit" color="primary" />
+          </vee-form>
         </q-tab-panel>
       </q-tab-panels>
     </q-card>
@@ -34,35 +55,54 @@
 </template>
 
 <script setup>
+import { ErrorMessage } from 'vee-validate';
 import { ref } from 'vue'
 
-const tab = ref('login')
+import { useUserStore } from '../stores/user.store';
 
-const loginForm = {
-  email: '',
-  password: ''
-}
-
-const registerForm = {
+const userReg = ref({
   name: '',
   email: '',
   password: '',
-  confirmPassword: ''
-}
+});
+const responseMessage = ref('');
 
-const login = () => {
-  // Implement login logic here
-  console.log('Logging in...', loginForm)
-}
+const userStore = useUserStore();
 
-const register = () => {
-  // Implement registration logic here
-  console.log('Registering...', registerForm)
+async function register(values) {
+  await userStore.createWithEmail(userReg.value);
+  responseMessage.value = userStore.responseMessage;
+  console.log(responseMessage);
 }
+if (responseMessage.value === 'User created successfully!') {
+  userReg.value = {
+    name: '',
+    email: '',
+    password: '',
+  };
+  responseMessage.value = '';
+}
+const tab = ref('login')
+const schema = ref({
+  name: "required|min:3|max:100|alpha_spaces",
+  email: "required|min:3|max:100|email",
+  password: "required|min:9|max:100|excluded:password",
+  confirm_password: "passwords_mismatch:@password",
+  tos: "tos",
+})
+
+
+
 </script>
 
-<style lang="sass" scoped>
-.my-card
-  width: 100%
-  max-width: 400px
+<style scoped>
+.my-card {
+  width: 700px;
+  max-width: 80%
+}
+
+.input-field {
+  display: flex;
+  flex-direction: column;
+}
 </style>
