@@ -2,14 +2,14 @@
   <div>
     <q-carousel v-model="slide" swipeable animated navigation-position="bottom" fullscreen navigation padding
       class="bg-primary text-white rounded-borders">
-      <!-- <q-carousel-slide name="style" class="column no-wrap flex-center">
+      <q-carousel-slide name="style" class="column no-wrap flex-center">
         <q-icon name="style" size="56px" />
         <div class="q-mt-md text-center">
           <div class="text-h3 q-mb-md">Welcome to MoneyWise!</div>
           <div class="text-subtitle1 q-mb-lg">Your Personal Finance Companion</div>
         </div>
-      </q-carousel-slide> -->
-      <!-- <q-carousel-slide name="tv" class="column no-wrap flex-center">
+      </q-carousel-slide>
+      <q-carousel-slide name="tv" class="column no-wrap flex-center">
         <q-icon name="live_tv" size="56px" />
         <div class="q-mt-md text-center">
           <div class="text-h4 q-mb-md">Track Your Expenses Effortlessly</div>
@@ -19,8 +19,8 @@
             <p>Monitor spending habits over time.</p>
           </div>
         </div>
-      </q-carousel-slide> -->
-      <!-- <q-carousel-slide name="layers" class="column no-wrap flex-center">
+      </q-carousel-slide>
+      <q-carousel-slide name="layers" class="column no-wrap flex-center">
         <q-icon name="layers" size="56px" />
         <div class="q-mt-md text-center">
           <div class="text-h4 q-mb-md">Set Budgets and Savings Goals</div>
@@ -30,7 +30,7 @@
             <p>Receive alerts when nearing budget limits.</p>
           </div>
         </div>
-      </q-carousel-slide> -->
+      </q-carousel-slide>
       <q-carousel-slide name="map" class="column no-wrap flex-center">
         <q-icon name="terrain" size="56px" />
         <div class="q-mt-md text-center">
@@ -39,7 +39,7 @@
             <p> {{ message }}</p>
           </div>
           <q-btn color="primary" @click="toggleAuthModal" label="Get Started" />
-          <!-- Render AuthComponent only if modal is open -->
+
         </div>
       </q-carousel-slide>
     </q-carousel>
