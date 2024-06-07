@@ -36,7 +36,7 @@
         <div class="q-mt-md text-center">
           <div class="text-h4 q-mb-md">Get Started with MoneyWise Today!</div>
           <div class="q-mb-2xlg">
-            <p> {{ message }}</p>
+            <p> Hello</p>
           </div>
           <q-btn color="primary" @click="toggleAuthModal" label="Get Started" />
 

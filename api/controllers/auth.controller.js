@@ -17,12 +17,13 @@ function signIn(req, res, next) {
                         } else {
                             const token = jwt.sign({
                                 userId: user.id
-                            }, 'secret', { expiresIn: '1h' });
+                            }, process.env.JWT_SECRET, { expiresIn: '1h' });
                             console.log(user.name, token)
                             return res.status(200).json({
                                 message: 'Authentication successful',
                                 token,
                                 user: {
+                                    userId: user.id,
                                     name: user.name,
                                     email: user.email
                                 }

@@ -1,4 +1,3 @@
-// src/stores/user.store.js
 import { defineStore } from "pinia";
 import { ref } from "vue";
 import { api } from '../boot/axios';
@@ -20,10 +19,8 @@ export const useUserStore = defineStore('user', () => {
   async function loginWithEmail(user) {
     try {
       const response = await api.post('/auth', user);
-      console.log(`User: >>>${JSON.stringify(response.data.user)}`, `Token: >>>${response.data.token},`, `Response Message >>>> ${response.data.message}`);
       if (response.data) {
         responseMessage.value = response.data.message;
-        console.log('1')
         setUser(response.data.user, response.data.token)
       }
     } catch (error) {
@@ -34,12 +31,9 @@ export const useUserStore = defineStore('user', () => {
 
   function setUser(userData, authToken) {
     user.value = userData;
-    console.log('2')
     token.value = authToken;
-    console.log('3')
     isAuthenticated.value = true;
-    console.log('4')
-    // localStorage.setItem('token', authToken);
+    localStorage.setItem('token', authToken);
   }
 
 

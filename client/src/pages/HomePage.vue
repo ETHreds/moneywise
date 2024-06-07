@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p class="text-h4 q-pl-md q-pt-md text-weight-medium">Hello, {{ user.name }}</p>
+    <p class="text-h4 q-pl-md q-pt-md text-weight-medium">Hello, {{ user.name }} id {{ user.userId }}</p>
     <p>This is your {{ user.email }}</p>
     <balance-card />
     <chart-component />
