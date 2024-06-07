@@ -18,7 +18,15 @@ function signIn(req, res, next) {
                             const token = jwt.sign({
                                 userId: user.id
                             }, 'secret', { expiresIn: '1h' });
-                            return res.status(200).json({ message: 'Authentication successful', token: token });
+                            console.log(user.name, token)
+                            return res.status(200).json({
+                                message: 'Authentication successful',
+                                token,
+                                user: {
+                                    name: user.name,
+                                    email: user.email
+                                }
+                            });
                         }
                     })
                     .catch(error => {

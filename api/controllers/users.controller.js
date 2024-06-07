@@ -2,7 +2,7 @@ const User = require('../models/users.model');
 const bcrypt = require('bcrypt');
 
 //get all users
-function getUsers(req, res, next) {
+function getUsers(req, res) {
     User.findAll()
         .then(users => {
             res.status(200).json({ users: users });
@@ -11,7 +11,7 @@ function getUsers(req, res, next) {
 }
 
 //get user by id
-function getUser(req, res, next) {
+function getUser(req, res) {
     const userId = req.params.userId;
     User.findByPk(userId)
         .then(user => {
@@ -26,7 +26,7 @@ function getUser(req, res, next) {
 //create user
 
 
-function createUser(req, res, next) {
+function createUser(req, res) {
     const { name, email, password } = req.body;
 
     // Hash the password
@@ -63,7 +63,7 @@ function createUser(req, res, next) {
 
 
 //update user
-function updateUser(req, res, next) {
+function updateUser(req, res) {
     const userId = req.params.userId;
     const updatedName = req.body.name;
     const updatedEmail = req.body.email;
@@ -83,7 +83,7 @@ function updateUser(req, res, next) {
 }
 
 //delete user
-function deleteUser(req, res, next) {
+function deleteUser(req, res) {
     const userId = req.params.userId;
     User.findByPk(userId)
         .then(user => {

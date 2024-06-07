@@ -16,6 +16,20 @@
 
       <q-tab-panels v-model="tab" animated>
         <q-tab-panel name="login">
+          <vee-form @submit="login">
+            <div class="input-field">
+              <q-label class="mb-2">Email</q-label>
+              <vee-field type="text" name="email" placeholder="Enter Email" class="" v-model="userLogin.email" />
+              <ErrorMessage name="email" class="text-negative " />
+            </div>
+            <div class="input-field">
+              <q-label class="mb-2">Password</q-label>
+              <vee-field type="text" name="password" placeholder="Enter Password" class=""
+                v-model="userLogin.password" />
+              <ErrorMessage name="password" class="text-negative " />
+            </div>
+            <q-btn label="Login" type="submit" color="primary" />
+          </vee-form>
         </q-tab-panel>
 
         <q-tab-panel name="registration">
@@ -46,7 +60,7 @@
               <ErrorMessage class="text-negative" name="tos" />
             </div>
 
-            <q-btn label="Submit" type="submit" color="primary" />
+            <q-btn label="Register" type="submit" color="primary" />
           </vee-form>
         </q-tab-panel>
       </q-tab-panels>
@@ -57,6 +71,8 @@
 <script setup>
 import { ErrorMessage } from 'vee-validate';
 import { ref } from 'vue'
+import { useRouter } from 'vue-router';
+const router = useRouter();
 
 import { useUserStore } from '../stores/user.store';
 
@@ -65,22 +81,43 @@ const userReg = ref({
   email: '',
   password: '',
 });
+const userLogin = ref({
+  email: '',
+  password: '',
+});
 const responseMessage = ref('');
 
 const userStore = useUserStore();
 
 async function register(values) {
-  await userStore.createWithEmail(userReg.value);
+  await userStore.registerWithEmail(userReg.value);
   responseMessage.value = userStore.responseMessage;
-  console.log(responseMessage);
+
+
+  if (responseMessage.value === 'User created successfully!') {
+    userReg.value = {
+      name: '',
+      email: '',
+      password: '',
+    };
+    responseMessage.value = '';
+  }
 }
-if (responseMessage.value === 'User created successfully!') {
-  userReg.value = {
-    name: '',
-    email: '',
-    password: '',
-  };
-  responseMessage.value = '';
+
+async function login() {
+  await userStore.loginWithEmail(userLogin.value);
+  responseMessage.value = userStore.responseMessage;
+  if (responseMessage.value === 'Authentication successful') {
+    userLogin.value = {
+      email: '',
+      password: '',
+    };
+    responseMessage.value = '';
+
+    router.push('/user');
+
+  }
+
 }
 const tab = ref('login')
 const schema = ref({

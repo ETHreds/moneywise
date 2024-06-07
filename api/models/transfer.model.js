@@ -1,32 +1,47 @@
-const Sequelize = require('sequelize');
-const db = require('../utils/postgres.db');
+// models/Transfer.js
+const { DataTypes } = require('sequelize');
+const sequelize = require('../utils/postgres.db');
+const Account = require('./Account');
 
-// Define the Transfer model
-const Transfer = db.define('transfer', {
-    date: {
-        type: Sequelize.DATE,
-        allowNull: false
+const Transfer = sequelize.define('Transfer', {
+    id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
     },
-    accountFrom: {
-        type: Sequelize.STRING,
-        allowNull: false
+    accountFromId: {
+        type: DataTypes.INTEGER,
+        references: {
+            model: Account,
+            key: 'id',
+        },
+        allowNull: false,
+        onDelete: 'CASCADE',
     },
-    accountTo: {
-        type: Sequelize.STRING,
-        allowNull: false
+    accountToId: {
+        type: DataTypes.INTEGER,
+        references: {
+            model: Account,
+            key: 'id',
+        },
+        allowNull: false,
+        onDelete: 'CASCADE',
     },
     amount: {
-        type: Sequelize.DECIMAL(15, 2),
-        allowNull: false
-    },
-    description: {
-        type: Sequelize.STRING,
-        allowNull: true
+        type: DataTypes.DECIMAL,
+        allowNull: false,
     },
     transactionCost: {
-        type: Sequelize.DECIMAL(15, 2),
-        allowNull: true
-    }
+        type: DataTypes.DECIMAL,
+        allowNull: false,
+    },
+}, {
+    timestamps: true,
 });
+
+Account.hasMany(Transfer, { foreignKey: 'accountFromId', as: 'transfersFrom' });
+Account.hasMany(Transfer, { foreignKey: 'accountToId', as: 'transfersTo' });
+Transfer.belongsTo(Account, { foreignKey: 'accountFromId', as: 'accountFrom' });
+Transfer.belongsTo(Account, { foreignKey: 'accountToId', as: 'accountTo' });
 
 module.exports = Transfer;

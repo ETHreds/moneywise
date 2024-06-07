@@ -35,13 +35,17 @@ app.use('/users', require('./routers/user.router'));
 
 app.use('/auth', require('./routers/auth.router'));
 
+// Accounts
+
+app.use('/accounts', require('./routers/account.router'));
+
 app.use((req, res) => {
   res.status(404)
   res.render('404')
 })
 
 // custom 500 page
-app.use((err, req, res, next) => {
+app.use((err, req, res) => {
   console.error(err.message)
   res.status(500)
   res.render('500')

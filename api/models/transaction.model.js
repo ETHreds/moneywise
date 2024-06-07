@@ -1,39 +1,61 @@
-// Import Sequelize and the connection instance
-const Sequelize = require('sequelize');
-const db = require('../utils/postgres.db');
+// models/Transaction.js
+const { DataTypes } = require('sequelize');
+const sequelize = require('../utils/postgres.db');
+const Account = require('./Account');
+const Category = require('./Category');
 
-// Define the Transaction model
-const Transaction = db.define('transaction', {
-    date: {
-        type: Sequelize.DATE,
-        allowNull: false,
-        default: Sequelize.DataTypes.NOW
-    },
-    amount: {
-        type: Sequelize.DECIMAL(15, 2),
-        allowNull: false
+const Transaction = sequelize.define('Transaction', {
+    id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        autoIncrement: true,
     },
     type: {
-        type: Sequelize.ENUM('income', 'expense'),
-        allowNull: false
-    },
-    category: {
-        type: Sequelize.STRING,
-        allowNull: false
-    },
-    description: {
-        type: Sequelize.STRING,
-        allowNull: true
+        type: DataTypes.ENUM('income', 'expense'),
+        allowNull: false,
     },
     recurring: {
-        type: Sequelize.BOOLEAN,
-        allowNull: false,
-        defaultValue: false
+        type: DataTypes.BOOLEAN,
+        defaultValue: false,
     },
-    account: {
-        type: Sequelize.STRING,
-        allowNull: false
-    }
+    accountId: {
+        type: DataTypes.INTEGER,
+        references: {
+            model: Account,
+            key: 'id',
+        },
+        allowNull: false,
+        onDelete: 'CASCADE',
+    },
+    counterparty: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    categoryId: {
+        type: DataTypes.INTEGER,
+        references: {
+            model: Category,
+            key: 'id',
+        },
+        allowNull: false,
+        onDelete: 'CASCADE',
+    },
+    amount: {
+        type: DataTypes.DECIMAL,
+        allowNull: false,
+    },
+    description: {
+        type: DataTypes.STRING,
+        allowNull: true,
+    },
+}, {
+    timestamps: true,
 });
+
+Account.hasMany(Transaction, { foreignKey: 'accountId' });
+Transaction.belongsTo(Account, { foreignKey: 'accountId' });
+
+Category.hasMany(Transaction, { foreignKey: 'categoryId' });
+Transaction.belongsTo(Category, { foreignKey: 'categoryId' });
 
 module.exports = Transaction;

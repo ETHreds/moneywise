@@ -1,6 +1,7 @@
 <template>
   <div>
-    <p class="text-h4 q-pl-md q-pt-md text-weight-medium">Hello, John Doe</p>
+    <p class="text-h4 q-pl-md q-pt-md text-weight-medium">Hello, {{ user.name }}</p>
+    <p>This is your {{ user.email }}</p>
     <balance-card />
     <chart-component />
     <slot-card>
@@ -20,6 +21,11 @@ import BalanceCard from "../components/BalanceCard.vue";
 import ChartComponent from "../components/ChartComponent.vue";
 import ClickableChip from "src/components/ClickableChip.vue";
 import SlotCard from "../components/SlotCard.vue";
+import { useUserStore } from '../stores/user.store';
+
+const userStore = useUserStore();
+
+const user = userStore.user;
 
 </script>
 

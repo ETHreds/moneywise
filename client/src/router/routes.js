@@ -1,3 +1,5 @@
+import { useUserStore } from 'src/stores/user.store';
+
 const routes = [
   {
     path: '/',
@@ -12,15 +14,23 @@ const routes = [
     children: [
       { path: '', component: () => import('src/pages/HomePage.vue') },
       { path: 'accounts', component: () => import('/src/pages/AccountsPage.vue') },
+    ],
+    beforeEnter: (to, from, next) => {
+      const userStore = useUserStore();
 
-    ]
+      if (userStore.isAuthenticated) {
+        next();
+      } else {
+        next('/');
+      }
+    }
   },
-  // Always leave this as last one,
+  // Always leave this as the last one,
   // but you can also remove it
   {
     path: '/:catchAll(.*)*',
     component: () => import('pages/ErrorNotFound.vue')
   }
-]
+];
 
-export default routes
+export default routes;

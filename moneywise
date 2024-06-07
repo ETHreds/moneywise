@@ -1,1 +1,1251 @@
-{"version":"80700","data":{"id":"2a1f74da-b24a-4e46-9ef3-16469fe25509","offsetX":373.53479283878295,"offsetY":57.06016631724715,"zoom":44,"gridSize":15,"layers":[{"id":"21a210d0-4c95-4d71-82a0-e48e7ce5c415","type":"diagram-links","isSvg":true,"transformed":true,"models":{"cddc9cd7-de80-4562-b29e-f856eb0fc7d9":{"id":"cddc9cd7-de80-4562-b29e-f856eb0fc7d9","locked":true,"type":"onetomany","selected":false,"source":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","sourcePort":"fbc078d1-606a-41e7-a5ca-a732ad05b6bf","target":"228ccb09-2d43-45b7-b5aa-002cf5427c52","targetPort":"327b43ad-1d78-4239-8b04-18bf1a901e5d","points":[{"id":"0bb79574-f643-44bf-8d45-cdd8b2fa52be","type":"point","x":241.00001839497776,"y":457.3437116534861},{"id":"dc47db78-1815-43c8-ad51-2aa3e54832d5","type":"point","x":241.00001839497776,"y":377.1093657178462},{"id":"cf49209c-e36a-43c0-89c1-9ee5fe70d933","type":"point","x":-141.00001648225438,"y":377.1093657178462}],"labels":[],"width":1,"color":"gray","curvyness":50,"selectedColor":"rgb(0,192,255)","data":{"local_table_uid":"228ccb09-2d43-45b7-b5aa-002cf5427c52","local_column_attnum":0,"referenced_table_uid":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","referenced_column_attnum":5}},"f62675ae-4bc9-4660-bf09-76e77dddf002":{"id":"f62675ae-4bc9-4660-bf09-76e77dddf002","locked":true,"type":"onetomany","selected":false,"source":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","sourcePort":"05bdf870-6d57-40d1-9eca-b115601d36e4","target":"6142dce9-7fb0-4e2a-8c07-4241247fa31e","targetPort":"1f39e471-41cc-4831-8f29-ba59eee36ce1","points":[{"id":"a7088a90-aa56-422e-ac35-2c2e5d096c52","type":"point","x":473.9999544533855,"y":357.1562465307182},{"id":"b7958f7b-0efd-4f73-bfc1-e18475e52b4c","type":"point","x":473.9999544533855,"y":452.1093657178462},{"id":"a364b2f8-5dce-457a-82b8-12f8b6c01c9e","type":"point","x":870.9999602662575,"y":452.1093657178462}],"labels":[],"width":1,"color":"gray","curvyness":50,"selectedColor":"rgb(0,192,255)","data":{"local_table_uid":"6142dce9-7fb0-4e2a-8c07-4241247fa31e","local_column_attnum":0,"referenced_table_uid":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","referenced_column_attnum":1}},"71003d88-661f-431b-adfb-7ea5f8719c42":{"id":"71003d88-661f-431b-adfb-7ea5f8719c42","locked":true,"type":"onetomany","selected":false,"source":"c96e2454-7efd-4b2c-9df2-a7c9322fb24b","sourcePort":"c0fed3af-d9a5-4cf4-b136-3d410f561a43","target":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","targetPort":"d8f1b43c-12fe-4d3c-887b-c0dd68033125","points":[{"id":"e1e32abb-fa2e-4ab2-9a13-775d9d704290","type":"point","x":458.99998351774565,"y":-77.84374620319177},{"id":"76b6ac40-9da1-4d88-a706-0f76fe63f2b6","type":"point","x":458.99998351774565,"y":332.1093802500263},{"id":"fc7daf50-7e41-47c4-ba21-ff172365a6e7","type":"point","x":473.9999544533855,"y":332.1093802500263}],"labels":[],"width":1,"color":"gray","curvyness":50,"selectedColor":"rgb(0,192,255)","data":{"local_table_uid":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","local_column_attnum":0,"referenced_table_uid":"c96e2454-7efd-4b2c-9df2-a7c9322fb24b","referenced_column_attnum":1}},"d0f4723a-db51-43d6-af6b-80f127178405":{"id":"d0f4723a-db51-43d6-af6b-80f127178405","locked":true,"type":"onetomany","selected":false,"source":"c96e2454-7efd-4b2c-9df2-a7c9322fb24b","sourcePort":"4dbcd952-10d1-4a7d-9ff1-4289138d0b4e","target":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","targetPort":"d8f1b43c-12fe-4d3c-887b-c0dd68033125","points":[{"id":"03aaad24-0afa-4776-8a73-b0fa61b229ab","type":"point","x":458.99998351774565,"y":-52.796879922499805},{"id":"92bac0f9-fb14-4471-9e64-4cd779d1eab3","type":"point","x":458.99998351774565,"y":332.1093802500263},{"id":"2cef4980-d066-4e25-9a49-84679b526da0","type":"point","x":473.9999544533855,"y":332.1093802500263}],"labels":[],"width":1,"color":"gray","curvyness":50,"selectedColor":"rgb(0,192,255)","data":{"local_table_uid":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","local_column_attnum":0,"referenced_table_uid":"c96e2454-7efd-4b2c-9df2-a7c9322fb24b","referenced_column_attnum":2}},"dbde17de-aaaa-4e76-a295-02bec207f7b1":{"id":"dbde17de-aaaa-4e76-a295-02bec207f7b1","locked":true,"type":"onetomany","selected":false,"source":"c96e2454-7efd-4b2c-9df2-a7c9322fb24b","sourcePort":"ccd9f4ca-6bec-4d6c-92bf-9d306b796e06","target":"228ccb09-2d43-45b7-b5aa-002cf5427c52","targetPort":"327b43ad-1d78-4239-8b04-18bf1a901e5d","points":[{"id":"23cf9c06-909e-49d0-bc19-9b9531551f1b","type":"point","x":226.0000474593379,"y":-27.74997731135769},{"id":"4cfd5ce4-5596-4fb8-813a-d730db58f491","type":"point","x":226.0000474593379,"y":377.1093657178462},{"id":"f97ef788-015f-46d9-bca6-a627ed978823","type":"point","x":-141.00001648225438,"y":377.1093657178462}],"labels":[],"width":1,"color":"gray","curvyness":50,"selectedColor":"rgb(0,192,255)","data":{"local_table_uid":"228ccb09-2d43-45b7-b5aa-002cf5427c52","local_column_attnum":0,"referenced_table_uid":"c96e2454-7efd-4b2c-9df2-a7c9322fb24b","referenced_column_attnum":3}},"9d155a62-d242-4a0f-b94a-2262e2a68080":{"id":"9d155a62-d242-4a0f-b94a-2262e2a68080","locked":true,"type":"onetomany","selected":false,"source":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","sourcePort":"ecd89db3-5af2-492d-975b-1616080e5234","target":"42458b77-6d2d-4d0d-9246-cc4ae5835ad2","targetPort":"0829e80a-6a07-4b7f-acb7-9ae084353e82","points":[{"id":"9a190bb5-6b28-4dca-84c7-9d6c489e0035","type":"point","x":241.00001839497776,"y":332.1093802500263},{"id":"5543b8e9-7749-4713-a728-721903514d1c","type":"point","x":241.00001839497776,"y":57.15624653071821},{"id":"0231d141-138d-41ec-816a-e45ecf8cb350","type":"point","x":-125.99997288571421,"y":57.15624653071821}],"labels":[],"width":1,"color":"gray","curvyness":50,"selectedColor":"rgb(0,192,255)","data":{"local_table_uid":"42458b77-6d2d-4d0d-9246-cc4ae5835ad2","local_column_attnum":1,"referenced_table_uid":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","referenced_column_attnum":0}}}},{"id":"56f68d5a-d366-4f4f-9c18-2315a3d2201e","type":"diagram-nodes","isSvg":false,"transformed":true,"models":{"228ccb09-2d43-45b7-b5aa-002cf5427c52":{"id":"228ccb09-2d43-45b7-b5aa-002cf5427c52","type":"table","selected":true,"x":-345,"y":285,"ports":[{"id":"b932886b-4793-4342-a624-b91bedacaf41","type":"onetomany","x":-343.99995254066215,"y":377.1093657178462,"name":"coll-port-0-left","alignment":"left","parentNode":"228ccb09-2d43-45b7-b5aa-002cf5427c52","links":[]},{"id":"327b43ad-1d78-4239-8b04-18bf1a901e5d","type":"onetomany","x":-171.00001648225438,"y":377.1093657178462,"name":"coll-port-0-right","alignment":"right","parentNode":"228ccb09-2d43-45b7-b5aa-002cf5427c52","links":["cddc9cd7-de80-4562-b29e-f856eb0fc7d9","dbde17de-aaaa-4e76-a295-02bec207f7b1"]}],"name":"Untitled","color":"rgb(0,192,255)","portsInOrder":[],"portsOutOrder":["b932886b-4793-4342-a624-b91bedacaf41","327b43ad-1d78-4239-8b04-18bf1a901e5d"],"otherInfo":{"data":{"name":"users","coll_inherits":[],"hastoasttable":true,"toast_autovacuum_enabled":"x","autovacuum_enabled":"x","primary_key":[{"columns":[{"column":"id","cid":"c520"}],"include":[],"cid":"c519"}],"foreign_key":[{"confmatchtype":false,"autoindex":false,"columns":[{"local_column":"id","referenced":"user_id","references_table_name":"accounts","references":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","cid":"c522"}],"confupdtype":"a","confdeltype":"a","cid":"c521"},{"confmatchtype":false,"autoindex":false,"columns":[{"local_column":"user_id","referenced":"user_id","references_table_name":"transfers","references":"c96e2454-7efd-4b2c-9df2-a7c9322fb24b","cid":"c524"}],"confupdtype":"a","confdeltype":"a","cid":"c523"}],"partition_keys":[],"partitions":[],"partition_type":"range","is_partitioned":false,"columns":[{"name":"user_id","is_primary_key":true,"attnum":0,"cltype":"integer","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":true,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c525"},{"name":"name","is_primary_key":false,"attnum":1,"cltype":"character","attlen":null,"min_val_attlen":1,"max_val_attlen":2147483647,"attprecision":null,"attnotnull":true,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c526"},{"name":"email","is_primary_key":false,"attnum":2,"cltype":"character","attlen":null,"min_val_attlen":1,"max_val_attlen":2147483647,"attprecision":null,"attnotnull":true,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c527"},{"name":"password","is_primary_key":false,"attnum":3,"cltype":"character","attlen":null,"min_val_attlen":1,"max_val_attlen":2147483647,"attprecision":null,"attnotnull":true,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c528"}],"schema":"public"},"note":"","metadata":{"data_failed":false,"is_promise":false,"fillColor":null,"textColor":null}}},"6142dce9-7fb0-4e2a-8c07-4241247fa31e":{"id":"6142dce9-7fb0-4e2a-8c07-4241247fa31e","type":"table","selected":false,"x":900,"y":360,"ports":[{"id":"24632f87-d7a1-4652-a7b2-4122e7b8de57","type":"onetomany","x":900.9999602662575,"y":477.15623199853815,"name":"coll-port-1-left","alignment":"left","parentNode":"6142dce9-7fb0-4e2a-8c07-4241247fa31e","links":[]},{"id":"03fc7839-1c41-4e20-9153-5b8c8007496d","type":"onetomany","x":1073.9998963246653,"y":477.15623199853815,"name":"coll-port-1-right","alignment":"right","parentNode":"6142dce9-7fb0-4e2a-8c07-4241247fa31e","links":[]},{"id":"1f39e471-41cc-4831-8f29-ba59eee36ce1","type":"onetomany","x":900.9999602662575,"y":452.1093657178462,"name":"coll-port-0-left","alignment":"left","parentNode":"6142dce9-7fb0-4e2a-8c07-4241247fa31e","links":["f62675ae-4bc9-4660-bf09-76e77dddf002"]},{"id":"de197b13-18bf-450e-b32f-39d17ca49ddc","type":"onetomany","x":1073.9998963246653,"y":452.1093657178462,"name":"coll-port-0-right","alignment":"right","parentNode":"6142dce9-7fb0-4e2a-8c07-4241247fa31e","links":[]}],"name":"Untitled","color":"rgb(0,192,255)","portsInOrder":[],"portsOutOrder":["24632f87-d7a1-4652-a7b2-4122e7b8de57","03fc7839-1c41-4e20-9153-5b8c8007496d","1f39e471-41cc-4831-8f29-ba59eee36ce1","de197b13-18bf-450e-b32f-39d17ca49ddc"],"otherInfo":{"data":{"name":"account_types","coll_inherits":[],"hastoasttable":true,"toast_autovacuum_enabled":"x","autovacuum_enabled":"x","primary_key":[{"columns":[{"column":"id","cid":"c416"}],"include":[],"cid":"c415"}],"foreign_key":[{"confmatchtype":false,"autoindex":false,"columns":[{"local_column":"account_type_id","referenced":"account_type_id","references_table_name":"accounts","references":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7"}],"confupdtype":"a","confdeltype":"a"}],"partition_keys":[],"partitions":[],"partition_type":"range","is_partitioned":false,"columns":[{"name":"account_type_id","is_primary_key":true,"attnum":0,"cltype":"integer","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":false,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c226"},{"name":"account_type","is_primary_key":false,"attnum":1,"cltype":"character","attlen":null,"min_val_attlen":1,"max_val_attlen":2147483647,"attprecision":null,"attnotnull":false,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c227"}],"schema":"public"},"note":"","metadata":{"data_failed":false,"is_promise":false,"fillColor":null,"textColor":null}}},"e1f46ffc-4c6e-48d0-aefb-ef246af946d7":{"id":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","type":"table","selected":false,"x":270,"y":240,"ports":[{"id":"fbc078d1-606a-41e7-a5ca-a732ad05b6bf","type":"onetomany","x":271.00001839497776,"y":457.3437116534861,"name":"coll-port-5-left","alignment":"left","parentNode":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","links":["cddc9cd7-de80-4562-b29e-f856eb0fc7d9"]},{"id":"8ee015e0-5ef3-458f-8383-061ea85ae9f8","type":"onetomany","x":443.9999544533855,"y":457.3437116534861,"name":"coll-port-5-right","alignment":"right","parentNode":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","links":[]},{"id":"3755ba47-a2a5-4ac4-8b74-cc0feb7fb9b9","type":"onetomany","x":271.00001839497776,"y":357.1562465307182,"name":"coll-port-1-left","alignment":"left","parentNode":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","links":[]},{"id":"05bdf870-6d57-40d1-9eca-b115601d36e4","type":"onetomany","x":443.9999544533855,"y":357.1562465307182,"name":"coll-port-1-right","alignment":"right","parentNode":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","links":["f62675ae-4bc9-4660-bf09-76e77dddf002"]},{"id":"ecd89db3-5af2-492d-975b-1616080e5234","type":"onetomany","x":271.00001839497776,"y":332.1093802500263,"name":"coll-port-0-left","alignment":"left","parentNode":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","links":["9d155a62-d242-4a0f-b94a-2262e2a68080"]},{"id":"d8f1b43c-12fe-4d3c-887b-c0dd68033125","type":"onetomany","x":443.9999544533855,"y":332.1093802500263,"name":"coll-port-0-right","alignment":"right","parentNode":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7","links":["71003d88-661f-431b-adfb-7ea5f8719c42","d0f4723a-db51-43d6-af6b-80f127178405"]}],"name":"Untitled","color":"rgb(0,192,255)","portsInOrder":[],"portsOutOrder":["fbc078d1-606a-41e7-a5ca-a732ad05b6bf","8ee015e0-5ef3-458f-8383-061ea85ae9f8","3755ba47-a2a5-4ac4-8b74-cc0feb7fb9b9","05bdf870-6d57-40d1-9eca-b115601d36e4","ecd89db3-5af2-492d-975b-1616080e5234","d8f1b43c-12fe-4d3c-887b-c0dd68033125"],"otherInfo":{"data":{"name":"accounts","coll_inherits":[],"hastoasttable":true,"toast_autovacuum_enabled":"x","autovacuum_enabled":"x","primary_key":[{"columns":[{"column":"id","cid":"c416"}],"include":[],"cid":"c415"}],"foreign_key":[{"confmatchtype":false,"autoindex":false,"columns":[{"local_column":"account_id","referenced":"account_from_id","references_table_name":"transfers","references":"c96e2454-7efd-4b2c-9df2-a7c9322fb24b","cid":"c418"}],"confupdtype":"a","confdeltype":"a","cid":"c417"},{"confmatchtype":false,"autoindex":false,"columns":[{"local_column":"account_id","referenced":"account_to_id","references_table_name":"transfers","references":"c96e2454-7efd-4b2c-9df2-a7c9322fb24b"}],"confupdtype":"a","confdeltype":"a"}],"partition_keys":[],"partitions":[],"partition_type":"range","is_partitioned":false,"columns":[{"name":"account_id","is_primary_key":true,"attnum":0,"cltype":"integer","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":true,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c419"},{"name":"account_type_id","is_primary_key":false,"attnum":1,"cltype":"integer","attlen":null,"min_val_attlen":1,"max_val_attlen":2147483647,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":true,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c420"},{"name":"account","is_primary_key":false,"attnum":2,"cltype":"character","attlen":null,"min_val_attlen":1,"max_val_attlen":2147483647,"attprecision":null,"attnotnull":false,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c421"},{"name":"starting_amount","is_primary_key":false,"attnum":3,"cltype":"integer","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":false,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c422"},{"name":"current_amount","is_primary_key":false,"attnum":4,"cltype":"integer","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":false,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c423"},{"name":"user_id","is_primary_key":false,"attnum":5,"cltype":"integer","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":true,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c424"}],"schema":"public"},"note":"","metadata":{"data_failed":false,"is_promise":false,"fillColor":null,"textColor":null}}},"c96e2454-7efd-4b2c-9df2-a7c9322fb24b":{"id":"c96e2454-7efd-4b2c-9df2-a7c9322fb24b","type":"table","selected":false,"x":255,"y":-195,"ports":[{"id":"ae55b28c-b667-4cf9-a639-4baa5ba3f597","type":"onetomany","x":256.0000474593379,"y":-77.84374620319177,"name":"coll-port-1-left","alignment":"left","parentNode":"c96e2454-7efd-4b2c-9df2-a7c9322fb24b","links":[]},{"id":"c0fed3af-d9a5-4cf4-b136-3d410f561a43","type":"onetomany","x":428.99998351774565,"y":-77.84374620319177,"name":"coll-port-1-right","alignment":"right","parentNode":"c96e2454-7efd-4b2c-9df2-a7c9322fb24b","links":["71003d88-661f-431b-adfb-7ea5f8719c42"]},{"id":"471011c0-7818-46fb-886b-fbf5e0f3fe41","type":"onetomany","x":256.0000474593379,"y":-52.796879922499805,"name":"coll-port-2-left","alignment":"left","parentNode":"c96e2454-7efd-4b2c-9df2-a7c9322fb24b","links":[]},{"id":"4dbcd952-10d1-4a7d-9ff1-4289138d0b4e","type":"onetomany","x":428.99998351774565,"y":-52.796879922499805,"name":"coll-port-2-right","alignment":"right","parentNode":"c96e2454-7efd-4b2c-9df2-a7c9322fb24b","links":["d0f4723a-db51-43d6-af6b-80f127178405"]},{"id":"ccd9f4ca-6bec-4d6c-92bf-9d306b796e06","type":"onetomany","x":256.0000474593379,"y":-27.74997731135769,"name":"coll-port-3-left","alignment":"left","parentNode":"c96e2454-7efd-4b2c-9df2-a7c9322fb24b","links":["dbde17de-aaaa-4e76-a295-02bec207f7b1"]},{"id":"8ec08795-ae6a-4494-a9b3-6da23b828dac","type":"onetomany","x":428.99998351774565,"y":-27.74997731135769,"name":"coll-port-3-right","alignment":"right","parentNode":"c96e2454-7efd-4b2c-9df2-a7c9322fb24b","links":[]}],"name":"Untitled","color":"rgb(0,192,255)","portsInOrder":[],"portsOutOrder":["ae55b28c-b667-4cf9-a639-4baa5ba3f597","c0fed3af-d9a5-4cf4-b136-3d410f561a43","471011c0-7818-46fb-886b-fbf5e0f3fe41","4dbcd952-10d1-4a7d-9ff1-4289138d0b4e","ccd9f4ca-6bec-4d6c-92bf-9d306b796e06","8ec08795-ae6a-4494-a9b3-6da23b828dac"],"otherInfo":{"data":{"columns":[{"name":"transfer_id","is_primary_key":true,"attnum":0,"cltype":"integer","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":true,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c380"},{"name":"account_from_id","is_primary_key":false,"attnum":1,"cltype":"integer","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":true,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c381"},{"name":"account_to_id","is_primary_key":false,"attnum":2,"cltype":"integer","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":true,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c382"},{"name":"user_id","is_primary_key":false,"attnum":3,"cltype":"integer","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":true,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c383"},{"name":"amount","is_primary_key":false,"attnum":4,"cltype":"integer","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":true,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c384"},{"name":"transaction_cost","is_primary_key":false,"attnum":5,"cltype":"integer","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":true,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c385"}],"name":"transfers","coll_inherits":[],"hastoasttable":true,"toast_autovacuum_enabled":"x","autovacuum_enabled":"x","primary_key":[{"columns":[{"column":"transfer_id","cid":"c379"}],"include":[],"cid":"c378"}],"foreign_key":[],"partition_keys":[],"partitions":[],"partition_type":"range","is_partitioned":false,"schema":"public"},"note":"","metadata":{"data_failed":false,"is_promise":false,"fillColor":null,"textColor":null}}},"42458b77-6d2d-4d0d-9246-cc4ae5835ad2":{"id":"42458b77-6d2d-4d0d-9246-cc4ae5835ad2","type":"table","selected":false,"x":-330,"y":-60,"ports":[{"id":"907bac30-54fb-413c-9daa-9411ff854521","type":"onetomany","x":-328.99998160502224,"y":57.15624653071821,"name":"coll-port-1-left","alignment":"left","parentNode":"42458b77-6d2d-4d0d-9246-cc4ae5835ad2","links":[]},{"id":"0829e80a-6a07-4b7f-acb7-9ae084353e82","type":"onetomany","x":-155.99997288571421,"y":57.15624653071821,"name":"coll-port-1-right","alignment":"right","parentNode":"42458b77-6d2d-4d0d-9246-cc4ae5835ad2","links":["9d155a62-d242-4a0f-b94a-2262e2a68080"]}],"name":"Untitled","color":"rgb(0,192,255)","portsInOrder":[],"portsOutOrder":["907bac30-54fb-413c-9daa-9411ff854521","0829e80a-6a07-4b7f-acb7-9ae084353e82"],"otherInfo":{"data":{"columns":[{"name":"transaction_id","is_primary_key":true,"attnum":0,"cltype":"integer","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":true,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c485"},{"name":"account_id","is_primary_key":false,"attnum":1,"cltype":"integer","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":false,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c486"},{"name":"transaction_type","is_primary_key":false,"attnum":2,"cltype":"boolean","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":false,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c487"},{"name":"recurring","is_primary_key":false,"attnum":3,"cltype":"boolean","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":false,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c488"},{"name":"next_payment","is_primary_key":false,"attnum":4,"cltype":"date","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":false,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c489"},{"name":"amount","is_primary_key":false,"attnum":5,"cltype":"integer","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":false,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c490"},{"name":"category","is_primary_key":false,"attnum":6,"cltype":"character","attlen":null,"min_val_attlen":1,"max_val_attlen":2147483647,"attprecision":null,"attnotnull":false,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c491"},{"name":"date","is_primary_key":false,"attnum":7,"cltype":"date","attlen":null,"attprecision":null,"attcompression":"","collspcname":null,"attnotnull":false,"colconstype":"n","attidentity":"a","attoptions":[],"cid":"c492"}],"name":"transactions","coll_inherits":[],"hastoasttable":true,"toast_autovacuum_enabled":"x","autovacuum_enabled":"x","primary_key":[{"columns":[{"column":"transaction_id","cid":"c485"}],"include":[]}],"foreign_key":[{"confmatchtype":false,"autoindex":false,"columns":[{"local_column":"account_id","referenced":"account_id","references_table_name":"accounts","references":"e1f46ffc-4c6e-48d0-aefb-ef246af946d7"}],"confupdtype":"a","confdeltype":"a"}],"partition_keys":[],"partitions":[],"partition_type":"range","is_partitioned":false,"schema":"public"},"note":"","metadata":{"data_failed":false,"is_promise":false,"fillColor":null,"textColor":null}}}}}]}}
+{
+  "version": "80700",
+  "data": {
+    "id": "2a1f74da-b24a-4e46-9ef3-16469fe25509",
+    "offsetX": 373.53479283878295,
+    "offsetY": 57.06016631724715,
+    "zoom": 44,
+    "gridSize": 15,
+    "layers": [
+      {
+        "id": "21a210d0-4c95-4d71-82a0-e48e7ce5c415",
+        "type": "diagram-links",
+        "isSvg": true,
+        "transformed": true,
+        "models": {
+          "cddc9cd7-de80-4562-b29e-f856eb0fc7d9": {
+            "id": "cddc9cd7-de80-4562-b29e-f856eb0fc7d9",
+            "locked": true,
+            "type": "onetomany",
+            "selected": false,
+            "source": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+            "sourcePort": "fbc078d1-606a-41e7-a5ca-a732ad05b6bf",
+            "target": "228ccb09-2d43-45b7-b5aa-002cf5427c52",
+            "targetPort": "327b43ad-1d78-4239-8b04-18bf1a901e5d",
+            "points": [
+              {
+                "id": "0bb79574-f643-44bf-8d45-cdd8b2fa52be",
+                "type": "point",
+                "x": 241.00001839497776,
+                "y": 457.3437116534861
+              },
+              {
+                "id": "dc47db78-1815-43c8-ad51-2aa3e54832d5",
+                "type": "point",
+                "x": 241.00001839497776,
+                "y": 377.1093657178462
+              },
+              {
+                "id": "cf49209c-e36a-43c0-89c1-9ee5fe70d933",
+                "type": "point",
+                "x": -141.00001648225438,
+                "y": 377.1093657178462
+              }
+            ],
+            "labels": [],
+            "width": 1,
+            "color": "gray",
+            "curvyness": 50,
+            "selectedColor": "rgb(0,192,255)",
+            "data": {
+              "local_table_uid": "228ccb09-2d43-45b7-b5aa-002cf5427c52",
+              "local_column_attnum": 0,
+              "referenced_table_uid": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+              "referenced_column_attnum": 5
+            }
+          },
+          "f62675ae-4bc9-4660-bf09-76e77dddf002": {
+            "id": "f62675ae-4bc9-4660-bf09-76e77dddf002",
+            "locked": true,
+            "type": "onetomany",
+            "selected": false,
+            "source": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+            "sourcePort": "05bdf870-6d57-40d1-9eca-b115601d36e4",
+            "target": "6142dce9-7fb0-4e2a-8c07-4241247fa31e",
+            "targetPort": "1f39e471-41cc-4831-8f29-ba59eee36ce1",
+            "points": [
+              {
+                "id": "a7088a90-aa56-422e-ac35-2c2e5d096c52",
+                "type": "point",
+                "x": 473.9999544533855,
+                "y": 357.1562465307182
+              },
+              {
+                "id": "b7958f7b-0efd-4f73-bfc1-e18475e52b4c",
+                "type": "point",
+                "x": 473.9999544533855,
+                "y": 452.1093657178462
+              },
+              {
+                "id": "a364b2f8-5dce-457a-82b8-12f8b6c01c9e",
+                "type": "point",
+                "x": 870.9999602662575,
+                "y": 452.1093657178462
+              }
+            ],
+            "labels": [],
+            "width": 1,
+            "color": "gray",
+            "curvyness": 50,
+            "selectedColor": "rgb(0,192,255)",
+            "data": {
+              "local_table_uid": "6142dce9-7fb0-4e2a-8c07-4241247fa31e",
+              "local_column_attnum": 0,
+              "referenced_table_uid": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+              "referenced_column_attnum": 1
+            }
+          },
+          "71003d88-661f-431b-adfb-7ea5f8719c42": {
+            "id": "71003d88-661f-431b-adfb-7ea5f8719c42",
+            "locked": true,
+            "type": "onetomany",
+            "selected": false,
+            "source": "c96e2454-7efd-4b2c-9df2-a7c9322fb24b",
+            "sourcePort": "c0fed3af-d9a5-4cf4-b136-3d410f561a43",
+            "target": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+            "targetPort": "d8f1b43c-12fe-4d3c-887b-c0dd68033125",
+            "points": [
+              {
+                "id": "e1e32abb-fa2e-4ab2-9a13-775d9d704290",
+                "type": "point",
+                "x": 458.99998351774565,
+                "y": -77.84374620319177
+              },
+              {
+                "id": "76b6ac40-9da1-4d88-a706-0f76fe63f2b6",
+                "type": "point",
+                "x": 458.99998351774565,
+                "y": 332.1093802500263
+              },
+              {
+                "id": "fc7daf50-7e41-47c4-ba21-ff172365a6e7",
+                "type": "point",
+                "x": 473.9999544533855,
+                "y": 332.1093802500263
+              }
+            ],
+            "labels": [],
+            "width": 1,
+            "color": "gray",
+            "curvyness": 50,
+            "selectedColor": "rgb(0,192,255)",
+            "data": {
+              "local_table_uid": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+              "local_column_attnum": 0,
+              "referenced_table_uid": "c96e2454-7efd-4b2c-9df2-a7c9322fb24b",
+              "referenced_column_attnum": 1
+            }
+          },
+          "d0f4723a-db51-43d6-af6b-80f127178405": {
+            "id": "d0f4723a-db51-43d6-af6b-80f127178405",
+            "locked": true,
+            "type": "onetomany",
+            "selected": false,
+            "source": "c96e2454-7efd-4b2c-9df2-a7c9322fb24b",
+            "sourcePort": "4dbcd952-10d1-4a7d-9ff1-4289138d0b4e",
+            "target": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+            "targetPort": "d8f1b43c-12fe-4d3c-887b-c0dd68033125",
+            "points": [
+              {
+                "id": "03aaad24-0afa-4776-8a73-b0fa61b229ab",
+                "type": "point",
+                "x": 458.99998351774565,
+                "y": -52.796879922499805
+              },
+              {
+                "id": "92bac0f9-fb14-4471-9e64-4cd779d1eab3",
+                "type": "point",
+                "x": 458.99998351774565,
+                "y": 332.1093802500263
+              },
+              {
+                "id": "2cef4980-d066-4e25-9a49-84679b526da0",
+                "type": "point",
+                "x": 473.9999544533855,
+                "y": 332.1093802500263
+              }
+            ],
+            "labels": [],
+            "width": 1,
+            "color": "gray",
+            "curvyness": 50,
+            "selectedColor": "rgb(0,192,255)",
+            "data": {
+              "local_table_uid": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+              "local_column_attnum": 0,
+              "referenced_table_uid": "c96e2454-7efd-4b2c-9df2-a7c9322fb24b",
+              "referenced_column_attnum": 2
+            }
+          },
+          "dbde17de-aaaa-4e76-a295-02bec207f7b1": {
+            "id": "dbde17de-aaaa-4e76-a295-02bec207f7b1",
+            "locked": true,
+            "type": "onetomany",
+            "selected": false,
+            "source": "c96e2454-7efd-4b2c-9df2-a7c9322fb24b",
+            "sourcePort": "ccd9f4ca-6bec-4d6c-92bf-9d306b796e06",
+            "target": "228ccb09-2d43-45b7-b5aa-002cf5427c52",
+            "targetPort": "327b43ad-1d78-4239-8b04-18bf1a901e5d",
+            "points": [
+              {
+                "id": "23cf9c06-909e-49d0-bc19-9b9531551f1b",
+                "type": "point",
+                "x": 226.0000474593379,
+                "y": -27.74997731135769
+              },
+              {
+                "id": "4cfd5ce4-5596-4fb8-813a-d730db58f491",
+                "type": "point",
+                "x": 226.0000474593379,
+                "y": 377.1093657178462
+              },
+              {
+                "id": "f97ef788-015f-46d9-bca6-a627ed978823",
+                "type": "point",
+                "x": -141.00001648225438,
+                "y": 377.1093657178462
+              }
+            ],
+            "labels": [],
+            "width": 1,
+            "color": "gray",
+            "curvyness": 50,
+            "selectedColor": "rgb(0,192,255)",
+            "data": {
+              "local_table_uid": "228ccb09-2d43-45b7-b5aa-002cf5427c52",
+              "local_column_attnum": 0,
+              "referenced_table_uid": "c96e2454-7efd-4b2c-9df2-a7c9322fb24b",
+              "referenced_column_attnum": 3
+            }
+          },
+          "9d155a62-d242-4a0f-b94a-2262e2a68080": {
+            "id": "9d155a62-d242-4a0f-b94a-2262e2a68080",
+            "locked": true,
+            "type": "onetomany",
+            "selected": false,
+            "source": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+            "sourcePort": "ecd89db3-5af2-492d-975b-1616080e5234",
+            "target": "42458b77-6d2d-4d0d-9246-cc4ae5835ad2",
+            "targetPort": "0829e80a-6a07-4b7f-acb7-9ae084353e82",
+            "points": [
+              {
+                "id": "9a190bb5-6b28-4dca-84c7-9d6c489e0035",
+                "type": "point",
+                "x": 241.00001839497776,
+                "y": 332.1093802500263
+              },
+              {
+                "id": "5543b8e9-7749-4713-a728-721903514d1c",
+                "type": "point",
+                "x": 241.00001839497776,
+                "y": 57.15624653071821
+              },
+              {
+                "id": "0231d141-138d-41ec-816a-e45ecf8cb350",
+                "type": "point",
+                "x": -125.99997288571421,
+                "y": 57.15624653071821
+              }
+            ],
+            "labels": [],
+            "width": 1,
+            "color": "gray",
+            "curvyness": 50,
+            "selectedColor": "rgb(0,192,255)",
+            "data": {
+              "local_table_uid": "42458b77-6d2d-4d0d-9246-cc4ae5835ad2",
+              "local_column_attnum": 1,
+              "referenced_table_uid": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+              "referenced_column_attnum": 0
+            }
+          }
+        }
+      },
+      {
+        "id": "56f68d5a-d366-4f4f-9c18-2315a3d2201e",
+        "type": "diagram-nodes",
+        "isSvg": false,
+        "transformed": true,
+        "models": {
+          "228ccb09-2d43-45b7-b5aa-002cf5427c52": {
+            "id": "228ccb09-2d43-45b7-b5aa-002cf5427c52",
+            "type": "table",
+            "selected": true,
+            "x": -345,
+            "y": 285,
+            "ports": [
+              {
+                "id": "b932886b-4793-4342-a624-b91bedacaf41",
+                "type": "onetomany",
+                "x": -343.99995254066215,
+                "y": 377.1093657178462,
+                "name": "coll-port-0-left",
+                "alignment": "left",
+                "parentNode": "228ccb09-2d43-45b7-b5aa-002cf5427c52",
+                "links": []
+              },
+              {
+                "id": "327b43ad-1d78-4239-8b04-18bf1a901e5d",
+                "type": "onetomany",
+                "x": -171.00001648225438,
+                "y": 377.1093657178462,
+                "name": "coll-port-0-right",
+                "alignment": "right",
+                "parentNode": "228ccb09-2d43-45b7-b5aa-002cf5427c52",
+                "links": [
+                  "cddc9cd7-de80-4562-b29e-f856eb0fc7d9",
+                  "dbde17de-aaaa-4e76-a295-02bec207f7b1"
+                ]
+              }
+            ],
+            "name": "Untitled",
+            "color": "rgb(0,192,255)",
+            "portsInOrder": [],
+            "portsOutOrder": [
+              "b932886b-4793-4342-a624-b91bedacaf41",
+              "327b43ad-1d78-4239-8b04-18bf1a901e5d"
+            ],
+            "otherInfo": {
+              "data": {
+                "name": "users",
+                "coll_inherits": [],
+                "hastoasttable": true,
+                "toast_autovacuum_enabled": "x",
+                "autovacuum_enabled": "x",
+                "primary_key": [
+                  {
+                    "columns": [
+                      {
+                        "column": "id",
+                        "cid": "c520"
+                      }
+                    ],
+                    "include": [],
+                    "cid": "c519"
+                  }
+                ],
+                "foreign_key": [
+                  {
+                    "confmatchtype": false,
+                    "autoindex": false,
+                    "columns": [
+                      {
+                        "local_column": "id",
+                        "referenced": "user_id",
+                        "references_table_name": "accounts",
+                        "references": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+                        "cid": "c522"
+                      }
+                    ],
+                    "confupdtype": "a",
+                    "confdeltype": "a",
+                    "cid": "c521"
+                  },
+                  {
+                    "confmatchtype": false,
+                    "autoindex": false,
+                    "columns": [
+                      {
+                        "local_column": "user_id",
+                        "referenced": "user_id",
+                        "references_table_name": "transfers",
+                        "references": "c96e2454-7efd-4b2c-9df2-a7c9322fb24b",
+                        "cid": "c524"
+                      }
+                    ],
+                    "confupdtype": "a",
+                    "confdeltype": "a",
+                    "cid": "c523"
+                  }
+                ],
+                "partition_keys": [],
+                "partitions": [],
+                "partition_type": "range",
+                "is_partitioned": false,
+                "columns": [
+                  {
+                    "name": "user_id",
+                    "is_primary_key": true,
+                    "attnum": 0,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c525"
+                  },
+                  {
+                    "name": "name",
+                    "is_primary_key": false,
+                    "attnum": 1,
+                    "cltype": "character",
+                    "attlen": null,
+                    "min_val_attlen": 1,
+                    "max_val_attlen": 2147483647,
+                    "attprecision": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c526"
+                  },
+                  {
+                    "name": "email",
+                    "is_primary_key": false,
+                    "attnum": 2,
+                    "cltype": "character",
+                    "attlen": null,
+                    "min_val_attlen": 1,
+                    "max_val_attlen": 2147483647,
+                    "attprecision": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c527"
+                  },
+                  {
+                    "name": "password",
+                    "is_primary_key": false,
+                    "attnum": 3,
+                    "cltype": "character",
+                    "attlen": null,
+                    "min_val_attlen": 1,
+                    "max_val_attlen": 2147483647,
+                    "attprecision": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c528"
+                  }
+                ],
+                "schema": "public"
+              },
+              "note": "",
+              "metadata": {
+                "data_failed": false,
+                "is_promise": false,
+                "fillColor": null,
+                "textColor": null
+              }
+            }
+          },
+          "6142dce9-7fb0-4e2a-8c07-4241247fa31e": {
+            "id": "6142dce9-7fb0-4e2a-8c07-4241247fa31e",
+            "type": "table",
+            "selected": false,
+            "x": 900,
+            "y": 360,
+            "ports": [
+              {
+                "id": "24632f87-d7a1-4652-a7b2-4122e7b8de57",
+                "type": "onetomany",
+                "x": 900.9999602662575,
+                "y": 477.15623199853815,
+                "name": "coll-port-1-left",
+                "alignment": "left",
+                "parentNode": "6142dce9-7fb0-4e2a-8c07-4241247fa31e",
+                "links": []
+              },
+              {
+                "id": "03fc7839-1c41-4e20-9153-5b8c8007496d",
+                "type": "onetomany",
+                "x": 1073.9998963246653,
+                "y": 477.15623199853815,
+                "name": "coll-port-1-right",
+                "alignment": "right",
+                "parentNode": "6142dce9-7fb0-4e2a-8c07-4241247fa31e",
+                "links": []
+              },
+              {
+                "id": "1f39e471-41cc-4831-8f29-ba59eee36ce1",
+                "type": "onetomany",
+                "x": 900.9999602662575,
+                "y": 452.1093657178462,
+                "name": "coll-port-0-left",
+                "alignment": "left",
+                "parentNode": "6142dce9-7fb0-4e2a-8c07-4241247fa31e",
+                "links": [
+                  "f62675ae-4bc9-4660-bf09-76e77dddf002"
+                ]
+              },
+              {
+                "id": "de197b13-18bf-450e-b32f-39d17ca49ddc",
+                "type": "onetomany",
+                "x": 1073.9998963246653,
+                "y": 452.1093657178462,
+                "name": "coll-port-0-right",
+                "alignment": "right",
+                "parentNode": "6142dce9-7fb0-4e2a-8c07-4241247fa31e",
+                "links": []
+              }
+            ],
+            "name": "Untitled",
+            "color": "rgb(0,192,255)",
+            "portsInOrder": [],
+            "portsOutOrder": [
+              "24632f87-d7a1-4652-a7b2-4122e7b8de57",
+              "03fc7839-1c41-4e20-9153-5b8c8007496d",
+              "1f39e471-41cc-4831-8f29-ba59eee36ce1",
+              "de197b13-18bf-450e-b32f-39d17ca49ddc"
+            ],
+            "otherInfo": {
+              "data": {
+                "name": "account_types",
+                "coll_inherits": [],
+                "hastoasttable": true,
+                "toast_autovacuum_enabled": "x",
+                "autovacuum_enabled": "x",
+                "primary_key": [
+                  {
+                    "columns": [
+                      {
+                        "column": "id",
+                        "cid": "c416"
+                      }
+                    ],
+                    "include": [],
+                    "cid": "c415"
+                  }
+                ],
+                "foreign_key": [
+                  {
+                    "confmatchtype": false,
+                    "autoindex": false,
+                    "columns": [
+                      {
+                        "local_column": "account_type_id",
+                        "referenced": "account_type_id",
+                        "references_table_name": "accounts",
+                        "references": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7"
+                      }
+                    ],
+                    "confupdtype": "a",
+                    "confdeltype": "a"
+                  }
+                ],
+                "partition_keys": [],
+                "partitions": [],
+                "partition_type": "range",
+                "is_partitioned": false,
+                "columns": [
+                  {
+                    "name": "account_type_id",
+                    "is_primary_key": true,
+                    "attnum": 0,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": false,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c226"
+                  },
+                  {
+                    "name": "account_type",
+                    "is_primary_key": false,
+                    "attnum": 1,
+                    "cltype": "character",
+                    "attlen": null,
+                    "min_val_attlen": 1,
+                    "max_val_attlen": 2147483647,
+                    "attprecision": null,
+                    "attnotnull": false,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c227"
+                  }
+                ],
+                "schema": "public"
+              },
+              "note": "",
+              "metadata": {
+                "data_failed": false,
+                "is_promise": false,
+                "fillColor": null,
+                "textColor": null
+              }
+            }
+          },
+          "e1f46ffc-4c6e-48d0-aefb-ef246af946d7": {
+            "id": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+            "type": "table",
+            "selected": false,
+            "x": 270,
+            "y": 240,
+            "ports": [
+              {
+                "id": "fbc078d1-606a-41e7-a5ca-a732ad05b6bf",
+                "type": "onetomany",
+                "x": 271.00001839497776,
+                "y": 457.3437116534861,
+                "name": "coll-port-5-left",
+                "alignment": "left",
+                "parentNode": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+                "links": [
+                  "cddc9cd7-de80-4562-b29e-f856eb0fc7d9"
+                ]
+              },
+              {
+                "id": "8ee015e0-5ef3-458f-8383-061ea85ae9f8",
+                "type": "onetomany",
+                "x": 443.9999544533855,
+                "y": 457.3437116534861,
+                "name": "coll-port-5-right",
+                "alignment": "right",
+                "parentNode": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+                "links": []
+              },
+              {
+                "id": "3755ba47-a2a5-4ac4-8b74-cc0feb7fb9b9",
+                "type": "onetomany",
+                "x": 271.00001839497776,
+                "y": 357.1562465307182,
+                "name": "coll-port-1-left",
+                "alignment": "left",
+                "parentNode": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+                "links": []
+              },
+              {
+                "id": "05bdf870-6d57-40d1-9eca-b115601d36e4",
+                "type": "onetomany",
+                "x": 443.9999544533855,
+                "y": 357.1562465307182,
+                "name": "coll-port-1-right",
+                "alignment": "right",
+                "parentNode": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+                "links": [
+                  "f62675ae-4bc9-4660-bf09-76e77dddf002"
+                ]
+              },
+              {
+                "id": "ecd89db3-5af2-492d-975b-1616080e5234",
+                "type": "onetomany",
+                "x": 271.00001839497776,
+                "y": 332.1093802500263,
+                "name": "coll-port-0-left",
+                "alignment": "left",
+                "parentNode": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+                "links": [
+                  "9d155a62-d242-4a0f-b94a-2262e2a68080"
+                ]
+              },
+              {
+                "id": "d8f1b43c-12fe-4d3c-887b-c0dd68033125",
+                "type": "onetomany",
+                "x": 443.9999544533855,
+                "y": 332.1093802500263,
+                "name": "coll-port-0-right",
+                "alignment": "right",
+                "parentNode": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7",
+                "links": [
+                  "71003d88-661f-431b-adfb-7ea5f8719c42",
+                  "d0f4723a-db51-43d6-af6b-80f127178405"
+                ]
+              }
+            ],
+            "name": "Untitled",
+            "color": "rgb(0,192,255)",
+            "portsInOrder": [],
+            "portsOutOrder": [
+              "fbc078d1-606a-41e7-a5ca-a732ad05b6bf",
+              "8ee015e0-5ef3-458f-8383-061ea85ae9f8",
+              "3755ba47-a2a5-4ac4-8b74-cc0feb7fb9b9",
+              "05bdf870-6d57-40d1-9eca-b115601d36e4",
+              "ecd89db3-5af2-492d-975b-1616080e5234",
+              "d8f1b43c-12fe-4d3c-887b-c0dd68033125"
+            ],
+            "otherInfo": {
+              "data": {
+                "name": "accounts",
+                "coll_inherits": [],
+                "hastoasttable": true,
+                "toast_autovacuum_enabled": "x",
+                "autovacuum_enabled": "x",
+                "primary_key": [
+                  {
+                    "columns": [
+                      {
+                        "column": "id",
+                        "cid": "c416"
+                      }
+                    ],
+                    "include": [],
+                    "cid": "c415"
+                  }
+                ],
+                "foreign_key": [
+                  {
+                    "confmatchtype": false,
+                    "autoindex": false,
+                    "columns": [
+                      {
+                        "local_column": "account_id",
+                        "referenced": "account_from_id",
+                        "references_table_name": "transfers",
+                        "references": "c96e2454-7efd-4b2c-9df2-a7c9322fb24b",
+                        "cid": "c418"
+                      }
+                    ],
+                    "confupdtype": "a",
+                    "confdeltype": "a",
+                    "cid": "c417"
+                  },
+                  {
+                    "confmatchtype": false,
+                    "autoindex": false,
+                    "columns": [
+                      {
+                        "local_column": "account_id",
+                        "referenced": "account_to_id",
+                        "references_table_name": "transfers",
+                        "references": "c96e2454-7efd-4b2c-9df2-a7c9322fb24b"
+                      }
+                    ],
+                    "confupdtype": "a",
+                    "confdeltype": "a"
+                  }
+                ],
+                "partition_keys": [],
+                "partitions": [],
+                "partition_type": "range",
+                "is_partitioned": false,
+                "columns": [
+                  {
+                    "name": "account_id",
+                    "is_primary_key": true,
+                    "attnum": 0,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c419"
+                  },
+                  {
+                    "name": "account_type_id",
+                    "is_primary_key": false,
+                    "attnum": 1,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "min_val_attlen": 1,
+                    "max_val_attlen": 2147483647,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c420"
+                  },
+                  {
+                    "name": "account",
+                    "is_primary_key": false,
+                    "attnum": 2,
+                    "cltype": "character",
+                    "attlen": null,
+                    "min_val_attlen": 1,
+                    "max_val_attlen": 2147483647,
+                    "attprecision": null,
+                    "attnotnull": false,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c421"
+                  },
+                  {
+                    "name": "starting_amount",
+                    "is_primary_key": false,
+                    "attnum": 3,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": false,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c422"
+                  },
+                  {
+                    "name": "current_amount",
+                    "is_primary_key": false,
+                    "attnum": 4,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": false,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c423"
+                  },
+                  {
+                    "name": "user_id",
+                    "is_primary_key": false,
+                    "attnum": 5,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c424"
+                  }
+                ],
+                "schema": "public"
+              },
+              "note": "",
+              "metadata": {
+                "data_failed": false,
+                "is_promise": false,
+                "fillColor": null,
+                "textColor": null
+              }
+            }
+          },
+          "c96e2454-7efd-4b2c-9df2-a7c9322fb24b": {
+            "id": "c96e2454-7efd-4b2c-9df2-a7c9322fb24b",
+            "type": "table",
+            "selected": false,
+            "x": 255,
+            "y": -195,
+            "ports": [
+              {
+                "id": "ae55b28c-b667-4cf9-a639-4baa5ba3f597",
+                "type": "onetomany",
+                "x": 256.0000474593379,
+                "y": -77.84374620319177,
+                "name": "coll-port-1-left",
+                "alignment": "left",
+                "parentNode": "c96e2454-7efd-4b2c-9df2-a7c9322fb24b",
+                "links": []
+              },
+              {
+                "id": "c0fed3af-d9a5-4cf4-b136-3d410f561a43",
+                "type": "onetomany",
+                "x": 428.99998351774565,
+                "y": -77.84374620319177,
+                "name": "coll-port-1-right",
+                "alignment": "right",
+                "parentNode": "c96e2454-7efd-4b2c-9df2-a7c9322fb24b",
+                "links": [
+                  "71003d88-661f-431b-adfb-7ea5f8719c42"
+                ]
+              },
+              {
+                "id": "471011c0-7818-46fb-886b-fbf5e0f3fe41",
+                "type": "onetomany",
+                "x": 256.0000474593379,
+                "y": -52.796879922499805,
+                "name": "coll-port-2-left",
+                "alignment": "left",
+                "parentNode": "c96e2454-7efd-4b2c-9df2-a7c9322fb24b",
+                "links": []
+              },
+              {
+                "id": "4dbcd952-10d1-4a7d-9ff1-4289138d0b4e",
+                "type": "onetomany",
+                "x": 428.99998351774565,
+                "y": -52.796879922499805,
+                "name": "coll-port-2-right",
+                "alignment": "right",
+                "parentNode": "c96e2454-7efd-4b2c-9df2-a7c9322fb24b",
+                "links": [
+                  "d0f4723a-db51-43d6-af6b-80f127178405"
+                ]
+              },
+              {
+                "id": "ccd9f4ca-6bec-4d6c-92bf-9d306b796e06",
+                "type": "onetomany",
+                "x": 256.0000474593379,
+                "y": -27.74997731135769,
+                "name": "coll-port-3-left",
+                "alignment": "left",
+                "parentNode": "c96e2454-7efd-4b2c-9df2-a7c9322fb24b",
+                "links": [
+                  "dbde17de-aaaa-4e76-a295-02bec207f7b1"
+                ]
+              },
+              {
+                "id": "8ec08795-ae6a-4494-a9b3-6da23b828dac",
+                "type": "onetomany",
+                "x": 428.99998351774565,
+                "y": -27.74997731135769,
+                "name": "coll-port-3-right",
+                "alignment": "right",
+                "parentNode": "c96e2454-7efd-4b2c-9df2-a7c9322fb24b",
+                "links": []
+              }
+            ],
+            "name": "Untitled",
+            "color": "rgb(0,192,255)",
+            "portsInOrder": [],
+            "portsOutOrder": [
+              "ae55b28c-b667-4cf9-a639-4baa5ba3f597",
+              "c0fed3af-d9a5-4cf4-b136-3d410f561a43",
+              "471011c0-7818-46fb-886b-fbf5e0f3fe41",
+              "4dbcd952-10d1-4a7d-9ff1-4289138d0b4e",
+              "ccd9f4ca-6bec-4d6c-92bf-9d306b796e06",
+              "8ec08795-ae6a-4494-a9b3-6da23b828dac"
+            ],
+            "otherInfo": {
+              "data": {
+                "columns": [
+                  {
+                    "name": "transfer_id",
+                    "is_primary_key": true,
+                    "attnum": 0,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c380"
+                  },
+                  {
+                    "name": "account_from_id",
+                    "is_primary_key": false,
+                    "attnum": 1,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c381"
+                  },
+                  {
+                    "name": "account_to_id",
+                    "is_primary_key": false,
+                    "attnum": 2,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c382"
+                  },
+                  {
+                    "name": "user_id",
+                    "is_primary_key": false,
+                    "attnum": 3,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c383"
+                  },
+                  {
+                    "name": "amount",
+                    "is_primary_key": false,
+                    "attnum": 4,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c384"
+                  },
+                  {
+                    "name": "transaction_cost",
+                    "is_primary_key": false,
+                    "attnum": 5,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c385"
+                  }
+                ],
+                "name": "transfers",
+                "coll_inherits": [],
+                "hastoasttable": true,
+                "toast_autovacuum_enabled": "x",
+                "autovacuum_enabled": "x",
+                "primary_key": [
+                  {
+                    "columns": [
+                      {
+                        "column": "transfer_id",
+                        "cid": "c379"
+                      }
+                    ],
+                    "include": [],
+                    "cid": "c378"
+                  }
+                ],
+                "foreign_key": [],
+                "partition_keys": [],
+                "partitions": [],
+                "partition_type": "range",
+                "is_partitioned": false,
+                "schema": "public"
+              },
+              "note": "",
+              "metadata": {
+                "data_failed": false,
+                "is_promise": false,
+                "fillColor": null,
+                "textColor": null
+              }
+            }
+          },
+          "42458b77-6d2d-4d0d-9246-cc4ae5835ad2": {
+            "id": "42458b77-6d2d-4d0d-9246-cc4ae5835ad2",
+            "type": "table",
+            "selected": false,
+            "x": -330,
+            "y": -60,
+            "ports": [
+              {
+                "id": "907bac30-54fb-413c-9daa-9411ff854521",
+                "type": "onetomany",
+                "x": -328.99998160502224,
+                "y": 57.15624653071821,
+                "name": "coll-port-1-left",
+                "alignment": "left",
+                "parentNode": "42458b77-6d2d-4d0d-9246-cc4ae5835ad2",
+                "links": []
+              },
+              {
+                "id": "0829e80a-6a07-4b7f-acb7-9ae084353e82",
+                "type": "onetomany",
+                "x": -155.99997288571421,
+                "y": 57.15624653071821,
+                "name": "coll-port-1-right",
+                "alignment": "right",
+                "parentNode": "42458b77-6d2d-4d0d-9246-cc4ae5835ad2",
+                "links": [
+                  "9d155a62-d242-4a0f-b94a-2262e2a68080"
+                ]
+              }
+            ],
+            "name": "Untitled",
+            "color": "rgb(0,192,255)",
+            "portsInOrder": [],
+            "portsOutOrder": [
+              "907bac30-54fb-413c-9daa-9411ff854521",
+              "0829e80a-6a07-4b7f-acb7-9ae084353e82"
+            ],
+            "otherInfo": {
+              "data": {
+                "columns": [
+                  {
+                    "name": "transaction_id",
+                    "is_primary_key": true,
+                    "attnum": 0,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": true,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c485"
+                  },
+                  {
+                    "name": "account_id",
+                    "is_primary_key": false,
+                    "attnum": 1,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": false,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c486"
+                  },
+                  {
+                    "name": "transaction_type",
+                    "is_primary_key": false,
+                    "attnum": 2,
+                    "cltype": "boolean",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": false,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c487"
+                  },
+                  {
+                    "name": "recurring",
+                    "is_primary_key": false,
+                    "attnum": 3,
+                    "cltype": "boolean",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": false,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c488"
+                  },
+                  {
+                    "name": "next_payment",
+                    "is_primary_key": false,
+                    "attnum": 4,
+                    "cltype": "date",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": false,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c489"
+                  },
+                  {
+                    "name": "amount",
+                    "is_primary_key": false,
+                    "attnum": 5,
+                    "cltype": "integer",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": false,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c490"
+                  },
+                  {
+                    "name": "category",
+                    "is_primary_key": false,
+                    "attnum": 6,
+                    "cltype": "character",
+                    "attlen": null,
+                    "min_val_attlen": 1,
+                    "max_val_attlen": 2147483647,
+                    "attprecision": null,
+                    "attnotnull": false,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c491"
+                  },
+                  {
+                    "name": "date",
+                    "is_primary_key": false,
+                    "attnum": 7,
+                    "cltype": "date",
+                    "attlen": null,
+                    "attprecision": null,
+                    "attcompression": "",
+                    "collspcname": null,
+                    "attnotnull": false,
+                    "colconstype": "n",
+                    "attidentity": "a",
+                    "attoptions": [],
+                    "cid": "c492"
+                  }
+                ],
+                "name": "transactions",
+                "coll_inherits": [],
+                "hastoasttable": true,
+                "toast_autovacuum_enabled": "x",
+                "autovacuum_enabled": "x",
+                "primary_key": [
+                  {
+                    "columns": [
+                      {
+                        "column": "transaction_id",
+                        "cid": "c485"
+                      }
+                    ],
+                    "include": []
+                  }
+                ],
+                "foreign_key": [
+                  {
+                    "confmatchtype": false,
+                    "autoindex": false,
+                    "columns": [
+                      {
+                        "local_column": "account_id",
+                        "referenced": "account_id",
+                        "references_table_name": "accounts",
+                        "references": "e1f46ffc-4c6e-48d0-aefb-ef246af946d7"
+                      }
+                    ],
+                    "confupdtype": "a",
+                    "confdeltype": "a"
+                  }
+                ],
+                "partition_keys": [],
+                "partitions": [],
+                "partition_type": "range",
+                "is_partitioned": false,
+                "schema": "public"
+              },
+              "note": "",
+              "metadata": {
+                "data_failed": false,
+                "is_promise": false,
+                "fillColor": null,
+                "textColor": null
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

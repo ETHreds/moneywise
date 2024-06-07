@@ -1,16 +1,34 @@
-const Sequelize = require('sequelize');
-const db = require('../utils/postgres.db');
+// models/User.js
+const { DataTypes } = require('sequelize');
+const sequelize = require('../utils/postgres.db');
 
-const User = db.define('user', {
+const User = sequelize.define('user', {
     id: {
-        type: Sequelize.INTEGER,
+        type: DataTypes.INTEGER,
+        primaryKey: true,
         autoIncrement: true,
-        allowNull: false,
-        primaryKey: true
     },
-    name: Sequelize.STRING,
-    email: Sequelize.STRING,
-    password: Sequelize.STRING,
+    name: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    email: {
+        type: DataTypes.STRING,
+        allowNull: false,
+        unique: true,
+    },
+    password: {
+        type: DataTypes.STRING,
+        allowNull: false,
+    },
+    createdAt: {
+        type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW,
+    },
+    updatedAt: {
+        type: DataTypes.DATE,
+        defaultValue: DataTypes.NOW,
+    },
 });
 
 module.exports = User;
