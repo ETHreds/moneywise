@@ -97,7 +97,7 @@
 
 <script>
 import { ref, reactive } from 'vue'
-import TransactionComponent from '../components/TransactionComponent.vue'
+import { useTransactionsStore } from 'src/stores/transactions.store';
 
 export default {
   setup() {
@@ -134,9 +134,10 @@ export default {
 
     return {
 
-      submitForm() {
-        console.log('Transaction data:', transaction);
-        resetForm();
+      async submitForm() {
+        const transactionStore = useTransactionsStore()
+        await transactionStore.addTransaction(transaction)
+        // resetForm();
       },
       resetForm() {
         transaction.type = '';

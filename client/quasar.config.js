@@ -19,7 +19,8 @@ export default configure((ctx) => {
       'i18n',
       'axios',
       'apexcharts',
-      'vee-validate'
+      'vee-validate',
+      'jwtDecode'
     ],
 
     // https://v2.quasar.dev/quasar-cli-vite/quasar-config-js#css
