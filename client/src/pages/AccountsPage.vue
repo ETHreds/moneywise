@@ -1,12 +1,10 @@
 <template>
   <div class="q-pa-md" style="width: 80%">
-
-
-    <q-card v-for="account in accounts" :key="account.id" flat bordered class="my-card">
+    <q-card v-for="account in accounts" :key="account.account_type_id" flat bordered class="my-card">
       <q-card-section>
         <div class="row items-center no-wrap">
           <div class="col">
-            <div class="text-subtitle2">{{ formatAccountType(account.account_type['account_type']) }} Balance
+            <div class="text-subtitle2">{{ formatAccountType(account.account_type) }} Balance
               <span><q-toggle v-model="value" label="Show Balance" /></span>
             </div>
             <div class="text-h5" v-if="value">{{ account.starting_amount }}</div>
@@ -14,10 +12,11 @@
           </div>
 
           <div class="col-auto">
-            <q-chip outline clickable @click="console.log('clicked')" color="teal" text-color="white"
-              icon="manage_accounts">
-              Manage
-            </q-chip>
+            <router-link :to="{ name: 'AccountBreakdown', params: { accountId: account.account_type_id } }">
+              <q-chip outline clickable color="teal" text-color="white" icon="manage_accounts">
+                Manage
+              </q-chip>
+            </router-link>
           </div>
         </div>
       </q-card-section>
@@ -28,7 +27,7 @@
       <q-card-actions>
         <div class="row">
           <div align="center" class="q-mx-md text-caption">
-            <q-btn outline round color="negative" icon="card_giftcard" />
+            <q-btn icon="card_giftcard" outline round color="negative" @click="open" />
             <p class="text-caption text-weight-light"> Add Account</p>
           </div>
           <div align="center" class="q-mx-md">
@@ -42,6 +41,12 @@
         </div>
       </q-card-actions>
     </q-card>
+    <q-dialog v-model="dialog" position="bottom">
+      <q-card style="width: 80%">
+        <!-- <add-account /> -->
+        <add-account />
+      </q-card>
+    </q-dialog>
 
   </div>
 </template>
@@ -49,10 +54,14 @@
 <script setup>
 import { ref, onMounted, computed } from "vue";
 import { useAccountStore } from '../stores/accounts.store';
+import AddAccount from "../components/AddAccount.vue";
 
+const dialog = ref(false)
 const value = ref(false)
-const amount = ref(25000)
 const accounts = ref(null)
+const open = () => {
+  dialog.value = !dialog.value
+}
 
 const accountStore = useAccountStore();
 onMounted(async () => {
@@ -66,7 +75,7 @@ const formatAccountType = (accountType) => {
   return formattedAccountType;
 };
 
-console.log(accountStore.userAccounts, 'hello')
+console.log(accounts, 'hello')
 </script>
 
 <style lang="scss" scoped></style>

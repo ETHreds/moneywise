@@ -21,25 +21,26 @@ export const useAccountStore = defineStore('accounts', () => {
 
   function calculateAccountTotal() {
     const totalStartingAmountsByType = {};
-
     userAccounts.value.forEach(account => {
+      const accountTypeId = account.account_type_id;
       const accountType = account.account_type.account_type;
       const startingAmount = parseFloat(account.starting_amount);
 
-      if (totalStartingAmountsByType.hasOwnProperty(accountType)) {
-        totalStartingAmountsByType[accountType] += startingAmount;
+      if (totalStartingAmountsByType.hasOwnProperty(accountTypeId)) {
+        totalStartingAmountsByType[accountTypeId].amount += startingAmount;
       } else {
-        totalStartingAmountsByType[accountType] = startingAmount;
+        totalStartingAmountsByType[accountTypeId] = {
+          account_type_id: accountTypeId,
+          account_type: accountType,
+          starting_amount: startingAmount
+        };
       }
     });
-
-    const totalStartingAmountsArray = Object.entries(totalStartingAmountsByType).map(([accountType, totalStartingAmount]) => ({
-      account_type: { account_type: accountType },
-      starting_amount: totalStartingAmount.toFixed(2)
-    }));
+    const totalStartingAmountsArray = Object.values(totalStartingAmountsByType);
 
     return totalStartingAmountsArray;
   }
+
 
 
   return {

@@ -14,14 +14,19 @@ const routes = [
     children: [
       { path: '', component: () => import('src/pages/HomePage.vue') },
       { path: 'accounts', component: () => import('/src/pages/AccountsPage.vue') },
+      {
+        path: '/accounts/:accountId',
+        name: 'AccountBreakdown',
+        component: () => import('/src/pages/AccBreakdownPage.vue'),
+        props: true
+      }
     ],
     beforeEnter: (to, from, next) => {
       const userStore = useUserStore();
-
-      if (userStore.isAuthenticated) {
-        next();
-      } else {
+      if (!userStore.isAuthenticated) {
         next('/');
+      } else {
+        next();
       }
     }
   },
@@ -32,5 +37,6 @@ const routes = [
     component: () => import('pages/ErrorNotFound.vue')
   }
 ];
+
 
 export default routes;

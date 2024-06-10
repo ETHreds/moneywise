@@ -6,25 +6,16 @@ export const useUserStore = defineStore('user', () => {
   const responseMessage = ref('');
   const isAuthenticated = ref(false);
   const user = ref(null);
-  const token = ref('')
+  const token = ref(localStorage.getItem('token') || '');
 
-  async function registerWithEmail(credentials) {
+  async function loginWithEmail(credentials) {
     try {
-      const response = await api.post('/users', credentials);
-      responseMessage.value = response.data.message;
-    } catch (error) {
-      responseMessage.value = 'Error sending data';
-    }
-  }
-  async function loginWithEmail(user) {
-    try {
-      const response = await api.post('/auth', user);
+      const response = await api.post('/auth', credentials);
       if (response.data) {
         responseMessage.value = response.data.message;
-        setUser(response.data.user, response.data.token)
+        setUser(response.data.user, response.data.token);
       }
     } catch (error) {
-
       responseMessage.value = 'Invalid Email/Password';
     }
   }
@@ -36,15 +27,24 @@ export const useUserStore = defineStore('user', () => {
     localStorage.setItem('token', authToken);
   }
 
+  function checkTokenExpiry() {
+    const tokenExpiration = localStorage.getItem('tokenExpiration');
+    if (tokenExpiration && Date.now() > tokenExpiration) {
+      isAuthenticated.value = false;
+      localStorage.removeItem('token');
+      localStorage.removeItem('tokenExpiration');
+    }
+  }
+
+  // Check token expiry on application load
+  checkTokenExpiry();
 
   return {
     responseMessage,
     token,
     user,
     isAuthenticated,
-    registerWithEmail,
     loginWithEmail,
     setUser
   };
 });
-

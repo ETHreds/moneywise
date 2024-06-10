@@ -8,14 +8,14 @@
       <div class="text-h2" style="opacity:.4">
         Oops. Nothing here...
       </div>
-
+      {{ message }}
       <q-btn class="q-mt-xl" color="white" text-color="blue" unelevated to="/" label="Go Home" no-caps />
     </div>
   </div>
 </template>
 
 <script setup>
-import { onMounted } from 'vue';
+import { onMounted, ref } from 'vue';
 defineOptions({
   name: 'ErrorNotFound'
 });
