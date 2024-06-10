@@ -5,7 +5,7 @@ const User = require('./users.model');
 const AccountType = require('./accTypes.model');
 
 const Account = sequelize.define('account', {
-    id: {
+    account_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,

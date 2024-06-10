@@ -1,11 +1,10 @@
-// models/Transaction.js
 const { DataTypes } = require('sequelize');
 const sequelize = require('../utils/postgres.db');
-const Account = require('./Account');
-const Category = require('./Category');
+const Account = require('./accounts.model');
+const Category = require('./categories.models');
 
-const Transaction = sequelize.define('Transaction', {
-    id: {
+const Transaction = sequelize.define('transaction', {
+    transaction_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
@@ -18,27 +17,28 @@ const Transaction = sequelize.define('Transaction', {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
     },
-    accountId: {
+    nextPayment: {
+        type: DataTypes.DATE,
+    },
+    account_id: {
         type: DataTypes.INTEGER,
         references: {
             model: Account,
             key: 'id',
         },
         allowNull: false,
-        onDelete: 'CASCADE',
     },
     counterparty: {
         type: DataTypes.STRING,
         allowNull: false,
     },
-    categoryId: {
+    category_id: {
         type: DataTypes.INTEGER,
         references: {
             model: Category,
             key: 'id',
         },
         allowNull: false,
-        onDelete: 'CASCADE',
     },
     amount: {
         type: DataTypes.DECIMAL,
@@ -52,10 +52,10 @@ const Transaction = sequelize.define('Transaction', {
     timestamps: true,
 });
 
-Account.hasMany(Transaction, { foreignKey: 'accountId' });
-Transaction.belongsTo(Account, { foreignKey: 'accountId' });
+Account.hasMany(Transaction, { foreignKey: 'account_id' });
+Transaction.belongsTo(Account, { foreignKey: 'account_id' });
 
-Category.hasMany(Transaction, { foreignKey: 'categoryId' });
-Transaction.belongsTo(Category, { foreignKey: 'categoryId' });
+Category.hasMany(Transaction, { foreignKey: 'category_id' });
+Transaction.belongsTo(Category, { foreignKey: 'category_id' });
 
 module.exports = Transaction;

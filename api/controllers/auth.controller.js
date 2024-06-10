@@ -1,6 +1,8 @@
 const User = require('../models/users.model');
 const bcrypt = require('bcrypt')
 const jwt = require('jsonwebtoken')
+const verifyToken = require('../utils/jwt.verify')
+require('dotenv').config()
 
 //Login
 function signIn(req, res, next) {
@@ -49,7 +51,26 @@ function signOut(req, res, next) {
     return res.status(200).json({ message: `${token} invalidated successfully` });
 }
 
+
+// Middleware function to verify JWT token
+function authenticateToken(req, res, next) {
+    // Verify the JWT token
+    verifyToken(req, process.env.JWT_SECRET)
+        .then(decoded => {
+            req.userId = decoded.userId;
+            next();
+        })
+        .catch(err => {
+            console.error('Error verifying token:', err);
+            res.status(401).send('Unauthorized');
+        });
+}
+
+
+
+
 module.exports = {
     signIn,
-    signOut
+    signOut,
+    authenticateToken
 }

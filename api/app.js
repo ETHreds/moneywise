@@ -39,6 +39,9 @@ app.use('/auth', require('./routers/auth.router'));
 
 app.use('/accounts', require('./routers/account.router'));
 
+// Transaction
+app.use('/transactions', require('./routers/transactions.router'));
+
 app.use((req, res) => {
   res.status(404)
   res.render('404')

@@ -13,6 +13,7 @@ async function addAccount(req, res) {
             user_id,
             account_type_id,
             starting_amount: amount,
+            current_balance: amount,
         });
         res.status(201).json({ newAccount });
     } catch (error) {

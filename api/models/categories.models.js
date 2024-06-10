@@ -2,8 +2,8 @@
 const { DataTypes } = require('sequelize');
 const sequelize = require('../utils/postgres.db');
 
-const Category = sequelize.define('Category', {
-    id: {
+const Category = sequelize.define('category', {
+    category_id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true,
