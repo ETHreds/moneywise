@@ -5,7 +5,7 @@ const verifyToken = require('../utils/jwt.verify')
 require('dotenv').config()
 
 //Login
-function signIn(req, res, next) {
+async function signIn(req, res, next) {
     const { email, password } = req.body
     User.findOne({ where: { email: email } })
         .then(user => {
@@ -53,18 +53,23 @@ function signOut(req, res, next) {
 
 
 // Middleware function to verify JWT token
-function authenticateToken(req, res, next) {
-    // Verify the JWT token
-    verifyToken(req, process.env.JWT_SECRET)
-        .then(decoded => {
-            req.userId = decoded.userId;
-            next();
-        })
-        .catch(err => {
-            console.error('Error verifying token:', err);
-            res.status(401).send('Unauthorized');
-        });
-}
+const authenticateToken = (req, res, next) => {
+    const token = req.headers.authorization?.split(' ')[1];
+
+    if (!token) {
+        return res.status(401).json({ message: 'Token missing' });
+    }
+
+    jwt.verify(token, process.env.JWT_SECRET, (err, user) => {
+        if (err) {
+            return res.status(403).json({ message: 'Token invalid' });
+        }
+
+        req.user = user;
+        next();
+    });
+};
+
 
 
 

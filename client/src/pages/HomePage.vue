@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <p class="text-h4 q-pl-md q-pt-md text-weight-medium">Hello, {{ user.name }} id {{ user.userId }}</p>
-    <p>This is your {{ user.email }}</p>
+  <div style="width:80%;">
+    <p class="text-h4 q-pl-md q-pt-md text-weight-medium">Hello, {{ user.name }}</p>
     <balance-card />
     <chart-component />
     <slot-card>
@@ -24,6 +23,8 @@ import SlotCard from "../components/SlotCard.vue";
 import { useUserStore } from '../stores/user.store';
 
 const userStore = useUserStore();
+
+const isAuthenticated = userStore.isAuthenticated;
 
 const user = userStore.user;
 

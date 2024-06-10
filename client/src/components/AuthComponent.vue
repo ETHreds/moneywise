@@ -6,7 +6,7 @@
           <q-tab label="Login" name="login" />
           <q-tab label="Registration" name="registration" />
         </q-tabs>
-        <div class="div">
+        <div class="div text-caution">
           {{ responseMessage }}
         </div>
       </q-card-section>
@@ -24,7 +24,7 @@
             </div>
             <div class="input-field">
               <q-label class="mb-2">Password</q-label>
-              <vee-field type="text" name="password" placeholder="Enter Password" class=""
+              <vee-field type="password" name="password" placeholder="Enter Password" class=""
                 v-model="userLogin.password" />
               <ErrorMessage name="password" class="text-negative " />
             </div>
@@ -46,12 +46,13 @@
             </div>
             <div class="input-field">
               <q-label class="mb-2">Password</q-label>
-              <vee-field type="text" name="password" placeholder="Enter Password" class="" v-model="userReg.password" />
+              <vee-field type="password" name="password" placeholder="Enter Password" class=""
+                v-model="userReg.password" />
               <ErrorMessage name="password" class="text-negative " />
             </div>
             <div class="input-field">
               <q-label class="mb-2">Confirm Password</q-label>
-              <vee-field type="text" name="confirm_password" placeholder="  Re-enter Password" class="" />
+              <vee-field type="password" name="confirm_password" placeholder="  Re-enter Password" class="" />
               <ErrorMessage name="confirm_password" class="text-negative " />
             </div>
             <div class="mb-3 pl-6">
@@ -94,7 +95,7 @@ async function register(values) {
   responseMessage.value = userStore.responseMessage;
 
 
-  if (responseMessage.value === 'User created successfully!') {
+  if (responseMessage.value === null) {
     userReg.value = {
       name: '',
       email: '',
